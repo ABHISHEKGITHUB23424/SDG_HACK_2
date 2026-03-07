@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated-client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Student {
+  id            String          @id @default(cuid())
+  name          String
+  rollNo        String          @unique
+  phone         String   
+  email         String
+  leetcodeId    String?
+  skillrackId   String?
+  createdAt     DateTime        @default(now())
+  
+  // Retro compatibility for existing UI
+  cgpa           Float?         @default(0)
+  githubId       String?
+  hackathonCount Int?           @default(0)
+  semesterHistory String?       @default("[]")
+
+  participations Participation[]
+  callLogs       CallLog[]
+}
+
+model Contest {
+  id             String          @id @default(cuid())
+  name           String
+  platform       String   
+  externalId     String   
+  scheduledAt    DateTime 
+  durationMins   Int      
+  cronJobId      String?  
+  status         String          @default("SCHEDULED")
+  participations Participation[]
+  callLogs       CallLog[]
+  createdAt      DateTime        @default(now())
+}
+
+model Participation {
+  id          String              @id @default(cuid())
+  student     Student             @relation(fields: [studentId], references: [id])
+  studentId   String
+  contest     Contest             @relation(fields: [contestId], references: [id])
+  contestId   String
+  status      String              @default("PENDING")
+  joinedAt    DateTime?
+  updatedAt   DateTime            @updatedAt
+
+  @@unique([studentId, contestId])
+}
+
+model CallLog {
+  id              String     @id @default(cuid())
+  student         Student    @relation(fields: [studentId], references: [id])
+  studentId       String
+  contest         Contest    @relation(fields: [contestId], references: [id])
+  contestId       String
+  vapiCallId      String?    
+  callStatus      String     @default("INITIATED")
+  whatsappSent    Boolean    @default(false)
+  whatsappStatus  String?
+  initiatedAt     DateTime   @default(now())
+  answeredAt      DateTime?
+  completedAt     DateTime?
+  triggeredBy     String     
+  errorMessage    String?
+}
