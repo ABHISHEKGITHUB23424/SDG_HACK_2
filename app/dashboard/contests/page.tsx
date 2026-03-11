@@ -50,26 +50,36 @@ export default function ContestsListPage() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(newContest),
             });
-            return res.json();
+            const json = await res.json();
+            if (!res.ok || !json.success) {
+                throw new Error(json.error || "Failed to create");
+            }
+            return json;
         },
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: ["contests"] });
             setIsCreateOpen(false);
         },
+        onError: (err) => {
+            alert("Failed to create contest: " + err);
+        }
     });
 
     const handleCreate = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
 
+        const platform = formData.get("platform");
+        const targetClass = formData.get("targetClass");
+
         // Pass the TargetClass to the custom payload so the API filters appropriately
         createMutation.mutate({
             name: formData.get("name"),
-            platform: formData.get("platform"),
+            platform: platform ? platform.toString() : "LeetCode",
             externalId: formData.get("externalId"),
             scheduledAt: formData.get("scheduledAt"),
             durationMins: parseInt(formData.get("duration") as string),
-            targetClass: formData.get("targetClass") // Simulated backend link
+            targetClass: targetClass ? targetClass.toString() : "CSEA"
         });
     };
 

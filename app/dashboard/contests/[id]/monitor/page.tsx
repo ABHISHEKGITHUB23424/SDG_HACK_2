@@ -120,6 +120,8 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
     });
 
     const [activeCallStudent, setActiveCallStudent] = useState<string | null>(null);
+    const [activeWhatsAppStudent, setActiveWhatsAppStudent] = useState<string | null>(null);
+    const [whatsappMessages, setWhatsappMessages] = useState<{ id: number, sender: string, text: string }[]>([]);
 
     const participations = contest?.participations || [];
     const joinedCount = participations.filter((p: any) => p.status === "JOINED").length;
@@ -130,9 +132,12 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
     // Effect to auto-target students based on call logs
     useEffect(() => {
         if (!contest?.callLogs) return;
-        const active = contest.callLogs.find((cl: any) =>
-            ["INITIATED", "RINGING", "IN_PROGRESS"].includes(cl.callStatus)
-        );
+        const active = contest.callLogs
+            .sort((a: any, b: any) => new Date(b.initiatedAt).getTime() - new Date(a.initiatedAt).getTime())
+            .find((cl: any) =>
+                ["INITIATED", "RINGING", "IN_PROGRESS"].includes(cl.callStatus) &&
+                (new Date().getTime() - new Date(cl.initiatedAt).getTime() < 30000) // timeout if stuck
+            );
         if (active) {
             const student = participations.find((p: any) => p.studentId === active.studentId)?.student;
             setActiveCallStudent(student?.name || null);
@@ -140,6 +145,89 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
             setActiveCallStudent(null);
         }
     }, [contest?.callLogs, participations]);
+
+    // Effect to trigger WhatsApp simulation for failed calls
+    useEffect(() => {
+        if (!contest?.callLogs) return;
+
+        const recentFallback = contest.callLogs
+            .sort((a: any, b: any) => new Date(b.initiatedAt).getTime() - new Date(a.initiatedAt).getTime())
+            .find((cl: any) =>
+                cl.whatsappSent &&
+                cl.callStatus === "FAILED" &&
+                (new Date().getTime() - new Date(cl.initiatedAt).getTime() < 25000) // Trigger if it just failed
+            );
+
+        if (recentFallback && !activeCallStudent) {
+            const student = participations.find((p: any) => p.studentId === recentFallback.studentId)?.student;
+            // Ensure we don't re-trigger for the same student immediately
+            if (student && student.name !== activeWhatsAppStudent) {
+                setActiveWhatsAppStudent(student.name);
+                startWhatsAppSimulation(student.name, contest.name);
+            }
+        }
+    }, [contest?.callLogs, participations, activeCallStudent]);
+
+    const startWhatsAppSimulation = (studentName: string, contestName: string) => {
+        setWhatsappMessages([]);
+        const sequence = [
+            { sender: 'bot', text: `Hi ${studentName}, this is the Academic Success AI Bot 🤖.`, delay: 1000 },
+            { sender: 'bot', text: `I just tried calling you but missed you! I noticed you haven't joined the ${contestName} yet.`, delay: 3000 },
+            { sender: 'bot', text: `Please reply with an option:\n1️⃣ I am joining now\n2️⃣ Facing technical issues\n3️⃣ Need an extension / OD`, delay: 5000 },
+            { sender: 'student', text: `1`, delay: 9000 }, // Simulated student response
+            { sender: 'bot', text: `Great! I've updated your status to "JOINING NOW". Good luck! ✅`, delay: 11000 },
+        ];
+
+        sequence.forEach((msg, idx) => {
+            setTimeout(() => {
+                setWhatsappMessages(prev => [...prev, { ...msg, id: idx }]);
+
+                // Auto-close after last message
+                if (idx === sequence.length - 1) {
+                    setTimeout(() => setActiveWhatsAppStudent(null), 5000);
+                }
+            }, msg.delay);
+        });
+    };
+
+    // Effect to play sound when AI Outbound Call is active
+    useEffect(() => {
+        if (!activeCallStudent) return;
+
+        const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+        if (!AudioContextClass) return;
+
+        const ctx = new AudioContextClass();
+        let interval: NodeJS.Timeout;
+
+        const playPing = () => {
+            if (ctx.state === 'closed') return;
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+
+            // Tech/sci-fi dialing radar ping sound
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
+
+            gain.gain.setValueAtTime(0, ctx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.1, ctx.currentTime + 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.5);
+        };
+
+        playPing();
+        interval = setInterval(playPing, 1000); // play ping every 1 second
+
+        return () => {
+            clearInterval(interval);
+            ctx.close().catch(() => { });
+        };
+    }, [activeCallStudent]);
 
     if (isLoading) return <div className="p-10 text-center text-slate-500">Loading monitor...</div>;
     if (!contest) return <div className="p-10 text-center text-red-500">Contest not found</div>;
@@ -153,6 +241,42 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
             {/* Visual Background Elements */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[100px] -mr-64 -mt-64 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[100px] -ml-64 -mb-64 pointer-events-none" />
+
+            {/* WhatsApp Chatbot Overlay */}
+            {activeWhatsAppStudent && (
+                <div className="fixed inset-0 z-[60] flex items-center justify-end pr-12 bg-slate-950/40 backdrop-blur-sm animate-in fade-in duration-500 rounded-lg pointer-events-none">
+                    <div className="w-[380px] h-[600px] bg-[#0b141a] border border-slate-700 rounded-2xl shadow-2xl overflow-hidden flex flex-col slide-in-from-right-8 duration-500 relative pointer-events-auto">
+                        {/* WhatsApp Header */}
+                        <div className="bg-[#202c33] px-4 py-3 flex items-center gap-3 shadow-md z-10">
+                            <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center relative">
+                                <MessageSquare className="w-5 h-5 text-white" />
+                                <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#202c33] rounded-full" />
+                            </div>
+                            <div>
+                                <h3 className="text-white font-medium">Academic AI Bot</h3>
+                                <p className="text-[#8696a0] text-xs">Chatting with {activeWhatsAppStudent}...</p>
+                            </div>
+                        </div>
+
+                        {/* WhatsApp Body background */}
+                        <div className="flex-1 p-4 overflow-y-auto space-y-4" style={{ backgroundImage: 'url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")', backgroundSize: 'cover' }}>
+                            {whatsappMessages.map((msg) => (
+                                <div key={msg.id} className={`flex ${msg.sender === 'bot' ? 'justify-start' : 'justify-end'} animate-in fade-in slide-in-from-bottom-2`}>
+                                    <div className={`max-w-[85%] rounded-lg px-3 py-2 text-sm shadow-sm ${msg.sender === 'bot' ? 'bg-[#202c33] text-slate-200 rounded-tl-sm' : 'bg-[#005c4b] text-white rounded-tr-sm'}`}>
+                                        <p className="whitespace-pre-wrap">{msg.text}</p>
+                                        <span className="text-[10px] text-[#8696a0] mt-1 block text-right">Just now</span>
+                                    </div>
+                                </div>
+                            ))}
+                            {whatsappMessages.length > 0 && whatsappMessages.length < 5 && (
+                                <div className="text-xs text-[#8696a0] italic text-center animate-pulse">
+                                    {whatsappMessages.length < 3 ? 'AI is typing...' : `${activeWhatsAppStudent} is typing...`}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Active Call Overlay */}
             {activeCallStudent && (

@@ -1581,3 +1581,455 @@
 {"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T08:34:03.187Z"}
 {"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T08:34:13.199Z"}
 {"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T09:31:40.878Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-07T11:04:14.985Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-07T11:04:15.152Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-07T11:04:15.153Z"}
+{"level":"info","message":"[REQ] GET /","timestamp":"2026-03-07T11:11:01.549Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:20.397Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:23.161Z"}
+{"level":"info","message":"[REQ] GET /","timestamp":"2026-03-07T11:11:25.920Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:28.231Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:38.243Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:48.528Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:11:58.645Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:12:08.660Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:12:18.674Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:12:28.441Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T11:12:31.777Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T11:12:31.785Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T11:12:31.788Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:12:33.373Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T11:12:33.374Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:12:38.465Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T11:12:38.501Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:12:39.386Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:12:48.478Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:13:52.926Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-07T11:13:56.550Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:13:56.601Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #2 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T11:13:56.603Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:13:56.607Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T11:14:01.891Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:14:33.775Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:14:44.844Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:14:53.839Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:15:03.849Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:15:14.907Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:15:24.922Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:16:01.971Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:05.533Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:15.544Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T11:16:24.588Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T11:16:24.598Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T11:16:24.599Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:16:26.227Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #3 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T11:16:26.228Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:27.492Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer. FUTURE SCOPE: Escalating to Parent Call...","timestamp":"2026-03-07T11:16:31.582Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:16:32.233Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:33.616Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:37.028Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:16:48.650Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:17:35.507Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:17:45.528Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-07T11:19:10.731Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-07T11:19:10.757Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-07T11:19:10.758Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-07T11:19:48.658Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-07T11:19:48.682Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-07T11:19:48.683Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:20:08.151Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:20:11.280Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:20:22.387Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:20:32.407Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:20:34.301Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:20:44.326Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:20:53.132Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:03.148Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T11:21:04.323Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T11:21:04.334Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T11:21:04.345Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:21:05.956Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T11:21:05.958Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T11:21:11.061Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:21:11.974Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:13.161Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:23.185Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T11:21:26.965Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T11:21:26.972Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T11:21:26.972Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:21:28.602Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #2 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T11:21:28.603Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:33.201Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T11:21:33.782Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:21:34.605Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:44.969Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:21:54.992Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:22:05.018Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T11:22:15.032Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:22:23.926Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:22:33.939Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:22:43.951Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:22:53.968Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:23:03.987Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-07T11:23:12.886Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for BIweekly_content_20 at 2026-03-07T11:24:12.916Z","timestamp":"2026-03-07T11:23:12.921Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T11:23:12.926Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T11:23:18.133Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/trigger-auto","timestamp":"2026-03-07T11:23:24.490Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T11:23:24.495Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T11:23:24.496Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:23:26.110Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #3 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T11:23:26.111Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T11:23:28.149Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T11:23:31.266Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for BIweekly_content_20","timestamp":"2026-03-07T11:23:31.267Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:23:32.117Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T11:23:38.167Z"}
+{"level":"info","message":"[CRON] Trigger fired for contest: BIweekly_content_20","timestamp":"2026-03-07T11:24:00.042Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T11:24:00.046Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T11:24:00.047Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T11:24:01.709Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #4 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T11:24:01.710Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T11:24:06.855Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T11:24:07.713Z"}
+{"level":"info","message":"[REQ] GET /api/call-logs?page=1","timestamp":"2026-03-07T11:27:21.088Z"}
+{"level":"info","message":"[REQ] GET /api/call-logs?page=1","timestamp":"2026-03-07T11:27:56.850Z"}
+{"level":"info","message":"[REQ] GET /api/call-logs?page=1","timestamp":"2026-03-07T14:09:15.138Z"}
+{"level":"info","message":"[REQ] GET /api/call-logs?page=1","timestamp":"2026-03-07T14:09:16.480Z"}
+{"level":"info","message":"[REQ] GET /api/call-logs?page=1","timestamp":"2026-03-07T14:09:28.239Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:09:29.825Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:09:31.636Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:09:34.620Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:09:34.623Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:09:34.624Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:09:36.206Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #5 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:09:36.206Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:09:41.276Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:09:41.644Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:09:42.212Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:09:45.911Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:09:55.921Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:10:05.932Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:10:34.544Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:10:38.032Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:10:38.034Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:10:38.035Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:10:38.837Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:10:38.840Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:10:38.840Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:10:39.640Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:10:39.659Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #6 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T14:10:39.663Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:10:39.671Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:10:39.673Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:10:40.420Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:10:40.443Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:10:40.443Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:10:40.482Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #7 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:10:40.482Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:10:41.036Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:10:41.040Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:10:41.041Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:10:41.307Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #8 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:10:41.308Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:10:42.122Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #9 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T14:10:42.123Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:10:42.686Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #10 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:10:42.687Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-07T14:10:43.538Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:10:44.560Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T14:10:44.796Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Legendary Coders","timestamp":"2026-03-07T14:10:44.797Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:10:45.643Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:10:45.669Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:10:46.436Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:10:46.495Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T14:10:47.235Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Legendary Coders","timestamp":"2026-03-07T14:10:47.237Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:10:47.317Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:10:47.850Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:10:48.127Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:10:48.695Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:10:54.574Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:11:19.073Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:11:34.570Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:12:17.378Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:12:20.646Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:13:40.027Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:13:43.598Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:13:45.628Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:13:45.633Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:13:45.634Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:13:47.302Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #11 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:13:47.303Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:13:52.449Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-07T14:13:53.024Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-07T14:13:53.028Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-07T14:13:53.029Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:13:53.306Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-07T14:13:53.609Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:13:54.755Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #12 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T14:13:54.778Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:13:55.582Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u2u0004gfp8dhwv4fzy","timestamp":"2026-03-07T14:13:58.098Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T14:13:59.926Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Legendary Coders","timestamp":"2026-03-07T14:13:59.927Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:14:00.797Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:14:02.589Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:14:05.139Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/trigger-auto","timestamp":"2026-03-07T14:14:08.410Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T14:14:08.415Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T14:14:08.416Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:14:10.031Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #13 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:14:10.032Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:14:15.154Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:14:15.162Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:14:16.047Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-07T14:14:16.264Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:14:16.346Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #14 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:14:16.381Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:14:16.432Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:14:21.561Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:14:50.296Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:14:58.009Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/trigger-auto","timestamp":"2026-03-07T14:15:02.641Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T14:15:02.647Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T14:15:02.647Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/check","timestamp":"2026-03-07T14:15:03.859Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T14:15:03.880Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T14:15:03.882Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:15:04.584Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #15 for Rakesh A (Result: FAIL)","timestamp":"2026-03-07T14:15:04.589Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:05.497Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T14:15:09.867Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for BIweekly_content_20","timestamp":"2026-03-07T14:15:09.883Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:15:10.604Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:15.516Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:25.675Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:35.692Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/trigger-auto","timestamp":"2026-03-07T14:15:36.660Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T14:15:36.664Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T14:15:36.665Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:15:38.274Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #16 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:15:38.275Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:15:43.376Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:15:44.283Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:48.464Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg8irno000488l3uel6moyb","timestamp":"2026-03-07T14:15:55.285Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg8irno000488l3uel6moyb/trigger-auto","timestamp":"2026-03-07T14:15:57.374Z"}
+{"level":"info","message":"[WORKER] Checking participation for BIweekly_content_20 (LeetCode)","timestamp":"2026-03-07T14:15:57.378Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-45","timestamp":"2026-03-07T14:15:57.378Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-07T14:15:59.012Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #17 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-07T14:15:59.014Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-07T14:16:04.136Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:16:04.527Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-07T14:16:05.024Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u42000dgfp8wrpvh4ku","timestamp":"2026-03-07T14:16:07.656Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg23u42000dgfp8wrpvh4ku/trigger-auto","timestamp":"2026-03-07T14:16:10.872Z"}
+{"level":"info","message":"[WORKER] Checking participation for Past Coding Sprint (SkillRack)","timestamp":"2026-03-07T14:16:10.875Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from SkillRack for sprint-101","timestamp":"2026-03-07T14:16:10.875Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Akash Arul Kumar (+919876543211)","timestamp":"2026-03-07T14:16:12.158Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #18 for Akash Arul Kumar (Result: FAIL)","timestamp":"2026-03-07T14:16:12.159Z"}
+{"level":"error","message":"[SIMULATOR] Student Akash Arul Kumar did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-07T14:16:17.248Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Akash Arul Kumar for Past Coding Sprint","timestamp":"2026-03-07T14:16:17.252Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u42000dgfp8wrpvh4ku","timestamp":"2026-03-07T14:16:17.670Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Abhishek Kumar S A (+919876543210)","timestamp":"2026-03-07T14:16:18.174Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #19 for Abhishek Kumar S A (Result: SUCCESS)","timestamp":"2026-03-07T14:16:18.175Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Abhishek Kumar S A","timestamp":"2026-03-07T14:16:23.297Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Richard Ruban Kumar R (+919876543213)","timestamp":"2026-03-07T14:16:24.223Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #20 for Richard Ruban Kumar R (Result: SUCCESS)","timestamp":"2026-03-07T14:16:24.224Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u42000dgfp8wrpvh4ku","timestamp":"2026-03-07T14:16:27.684Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Richard Ruban Kumar R","timestamp":"2026-03-07T14:16:29.396Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 1, Missing: 3","timestamp":"2026-03-07T14:16:30.239Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u42000dgfp8wrpvh4ku","timestamp":"2026-03-07T14:16:37.696Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg23u42000dgfp8wrpvh4ku","timestamp":"2026-03-07T14:16:48.145Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-07T14:16:50.738Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-08T05:33:52.096Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-08T05:34:02.155Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-08T05:34:12.168Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-08T05:34:22.175Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-08T05:34:32.184Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:34:35.207Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:34:45.218Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-08T05:34:48.504Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-08T05:34:48.506Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-08T05:34:48.507Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-08T05:34:50.058Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #21 for Rakesh A (Result: FAIL)","timestamp":"2026-03-08T05:34:50.059Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-08T05:34:55.111Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Legendary Coders","timestamp":"2026-03-08T05:34:55.111Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:34:55.222Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-08T05:34:56.067Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:35:05.235Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:35:15.247Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T05:35:19.357Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-08T07:12:34.510Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-09T10:20:32.919Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-09T10:20:33.036Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-09T10:20:33.037Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-09T10:20:58.946Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-09T10:20:58.972Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-09T10:20:58.973Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-09T10:21:26.104Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-09T10:21:26.127Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-09T10:21:26.127Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-09T10:21:52.963Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-09T10:21:52.987Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-09T10:21:52.987Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-09T10:22:55.938Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-09T10:22:55.963Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-09T10:22:55.963Z"}
+{"level":"info","message":"[REQ] GET /api/health","timestamp":"2026-03-09T10:24:13.707Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:25:11.922Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:25:26.205Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:25:36.220Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:25:46.241Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:25:56.255Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:06.269Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:16.283Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:26.298Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:36.316Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:46.337Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:26:56.350Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:06.365Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:16.378Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:26.392Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:36.406Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:46.422Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-09T10:27:47.563Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Biweekly_content_34 at 2026-03-09T10:28:47.609Z","timestamp":"2026-03-09T10:27:47.615Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:47.621Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:27:57.645Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:27:57.895Z"}
+{"level":"info","message":"[CRON] Trigger fired for contest: Biweekly_content_34","timestamp":"2026-03-09T10:28:00.054Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_content_34 (LeetCode)","timestamp":"2026-03-09T10:28:00.059Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-56","timestamp":"2026-03-09T10:28:00.060Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:28:01.697Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-09T10:28:01.697Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj1f75o0000nizj7uh5t9mm/check","timestamp":"2026-03-09T10:28:02.821Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_content_34 (LeetCode)","timestamp":"2026-03-09T10:28:02.827Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-56","timestamp":"2026-03-09T10:28:02.828Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:04.448Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-09T10:28:06.809Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-09T10:28:07.705Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:14.475Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj1f75o0000nizj7uh5t9mm/trigger-auto","timestamp":"2026-03-09T10:28:19.524Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_content_34 (LeetCode)","timestamp":"2026-03-09T10:28:19.529Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-56","timestamp":"2026-03-09T10:28:19.530Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:28:21.176Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #2 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-09T10:28:21.177Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:24.490Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-09T10:28:26.315Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-09T10:28:27.182Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:34.509Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj1f75o0000nizj7uh5t9mm/check","timestamp":"2026-03-09T10:28:43.098Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_content_34 (LeetCode)","timestamp":"2026-03-09T10:28:43.101Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-56","timestamp":"2026-03-09T10:28:43.102Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:44.527Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:44.726Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj1f75o0000nizj7uh5t9mm/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-09T10:28:45.780Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:28:45.827Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #3 for Rakesh A (Result: FAIL)","timestamp":"2026-03-09T10:28:45.828Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:45.834Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-09T10:28:50.990Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Biweekly_content_34","timestamp":"2026-03-09T10:28:50.993Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:28:55.852Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:29:05.871Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj1f75o0000nizj7uh5t9mm","timestamp":"2026-03-09T10:29:15.891Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:29:21.696Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:38:39.785Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:38:57.575Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:39:23.081Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:44:21.721Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:44:31.749Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:44:41.779Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:44:51.798Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:01.854Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:11.905Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:21.924Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:31.971Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:41.991Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-09T10:45:49.899Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Biweekly_coon at 2026-03-09T10:46:49.942Z","timestamp":"2026-03-09T10:45:49.949Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T10:45:49.955Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:45:57.454Z"}
+{"level":"info","message":"[CRON] Trigger fired for contest: Biweekly_coon","timestamp":"2026-03-09T10:46:00.017Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_coon (LeetCode)","timestamp":"2026-03-09T10:46:00.034Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-50","timestamp":"2026-03-09T10:46:00.056Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:46:01.712Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #4 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-09T10:46:01.713Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-09T10:46:06.866Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:07.469Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-09T10:46:07.717Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj22eas000cnizj7fjillph/check","timestamp":"2026-03-09T10:46:15.252Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_coon (LeetCode)","timestamp":"2026-03-09T10:46:15.257Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-50","timestamp":"2026-03-09T10:46:15.258Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:16.905Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:26.926Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:36.947Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:46.966Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:46:57.015Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:07.040Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:17.060Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:27.110Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:37.139Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:47.158Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:47:57.173Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:07.190Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:17.213Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:27.258Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:37.278Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:47.299Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:48:57.315Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:07.333Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:17.353Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj22eas000cnizj7fjillph/trigger-auto","timestamp":"2026-03-09T10:49:24.920Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_coon (LeetCode)","timestamp":"2026-03-09T10:49:24.927Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-50","timestamp":"2026-03-09T10:49:24.928Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:49:26.601Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #5 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-09T10:49:26.602Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:27.373Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-09T10:49:31.776Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-09T10:49:32.604Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:37.394Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmj22eas000cnizj7fjillph/trigger-auto","timestamp":"2026-03-09T10:49:41.430Z"}
+{"level":"info","message":"[WORKER] Checking participation for Biweekly_coon (LeetCode)","timestamp":"2026-03-09T10:49:41.438Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-50","timestamp":"2026-03-09T10:49:41.440Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-09T10:49:43.098Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #6 for Rakesh A (Result: FAIL)","timestamp":"2026-03-09T10:49:43.099Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:47.411Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-09T10:49:48.261Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Biweekly_coon","timestamp":"2026-03-09T10:49:48.262Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-09T10:49:49.100Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:49:57.430Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:07.446Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:17.487Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:27.506Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:37.529Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:47.545Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:50:57.562Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:51:07.618Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:51:17.666Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:51:27.691Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:51:37.746Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmj22eas000cnizj7fjillph","timestamp":"2026-03-09T10:51:47.785Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T12:53:25.890Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-09T12:53:33.375Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-11T11:07:12.575Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-11T11:07:12.745Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-11T11:07:12.746Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-11T11:37:59.501Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-11T11:37:59.541Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-11T11:37:59.541Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-11T11:38:58.657Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for XYZ at 2026-03-11T11:39:58.707Z","timestamp":"2026-03-11T11:38:58.710Z"}
+{"level":"info","message":"[CRON] Trigger fired for contest: XYZ","timestamp":"2026-03-11T11:39:00.030Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T11:39:00.038Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-340","timestamp":"2026-03-11T11:39:00.039Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-11T11:39:01.700Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-11T11:39:01.701Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-11T11:39:06.889Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-11T11:39:07.711Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-11T11:39:32.370Z"}
+{"level":"error","message":"[ERROR] ZodError: [\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"LeetCode\",\n      \"SkillRack\",\n      \"Manual\"\n    ],\n    \"path\": [\n      \"platform\"\n    ],\n    \"message\": \"Invalid option: expected one of \\\"LeetCode\\\"|\\\"SkillRack\\\"|\\\"Manual\\\"\"\n  }\n]\n    at <anonymous> (C:\\SEG_HACK_2\\backend\\src\\routes\\contests.ts:45:12)\n    at Layer.handleRequest (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:291:5)\n    at router.handle (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:186:3)","timestamp":"2026-03-11T11:39:32.375Z"}

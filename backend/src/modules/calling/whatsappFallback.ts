@@ -7,12 +7,20 @@ export async function sendWhatsAppFallback(student: Student, contest: Contest, c
 
     // Simulate Twilio API call
     console.log(`
-    -------------------------------------------
-    WHATSAPP SENDING (SIMULATED)
-    TO: ${student.phone}
-    BODY: Hi ${student.name}, we noticed you haven't joined the ${contest.name} yet. 
-    It started 15 minutes ago. Please join now to avoid losing progress!
-    -------------------------------------------
+    🤖 [AI CHATBOT WHATSAPP FALLBACK INITIATED]
+    ========================================================
+    To: ${student.phone} (${student.name})
+    
+    [Bot]: "Hi ${student.name}, this is the Academic Success AI Bot 🤖."
+    [Bot]: "I just tried calling you but missed you! I noticed you haven't joined the ${contest.name} yet."
+    [Bot]: "It started a little while ago. Is everything okay? 
+    
+    Please reply with an option:
+    1️⃣ - 'I am joining now'
+    2️⃣ - 'I am facing technical issues'
+    3️⃣ - 'I need an extension / OD'
+    4️⃣ - 'Talk to a human staff'"
+    ========================================================
     `);
 
     await prisma.callLog.update({

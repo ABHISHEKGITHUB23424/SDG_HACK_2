@@ -1,0 +1,8 @@
+[dotenv@17.3.1] injecting env (12) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+warn(prisma) Conflict for env vars DATABASE_URL, NEXT_PUBLIC_API_URL in .env and ..\.env
+Env vars from ..\.env overwrite the ones from .env
+      
+15:52:55 [[32minfo[39m]: [STARTUP] Express server listening on port 4000
+15:52:55 [[32minfo[39m]: [SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z
+15:52:55 [[32minfo[39m]: [STARTUP] Scheduled 1 contest monitors
+^C

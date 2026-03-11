@@ -67,7 +67,10 @@ export async function triggerAiCall(student: Student, contest: Contest, triggere
                         });
 
                         if (isFailingStudent) {
-                            logger.error(`[SIMULATOR] Student ${student.name} did not answer. FUTURE SCOPE: Escalating to Parent Call...`);
+                            logger.error(`[SIMULATOR] Student ${student.name} did not answer the Voice Call. Activating AI Chatbot Fallback...`);
+
+                            // Trigger the AI Chatbot WhatsApp fallback sequence for unanswered calls
+                            await sendWhatsAppFallback(student, contest, callLog.id);
                         } else {
                             logger.info(`[SIMULATOR] Call COMPLETED for ${student.name}`);
                         }

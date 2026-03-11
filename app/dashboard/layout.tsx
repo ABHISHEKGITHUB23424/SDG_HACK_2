@@ -4,7 +4,7 @@ import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { Bell, LogOut, Users, Trophy, FileText, UserCircle, AlertCircle, Phone } from "lucide-react";
+import { Bell, LogOut, Users, Trophy, FileText, UserCircle, AlertCircle, Phone, BookOpen, Medal } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
@@ -34,6 +34,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                     <nav className="mt-4 flex flex-col gap-2 px-4">
                         <Link href="/dashboard/contests" className="flex items-center gap-2 px-4 py-2 hover:bg-slate-800 rounded-md transition-colors text-slate-300">
                             <AlertCircle className="w-5 h-5" /> Contests
+                        </Link>
+                        <Link href="/dashboard/courses" className="flex items-center gap-2 px-4 py-2 hover:bg-slate-800 rounded-md transition-colors text-slate-300">
+                            <BookOpen className="w-5 h-5" /> Courses
+                        </Link>
+                        <Link href="/dashboard/competitions" className="flex items-center gap-2 px-4 py-2 hover:bg-slate-800 rounded-md transition-colors text-slate-300">
+                            <Medal className="w-5 h-5" /> Competitions
                         </Link>
                         <Link href="/dashboard/od-requests" className="flex items-center gap-2 px-4 py-2 hover:bg-slate-800 rounded-md transition-colors text-slate-300">
                             <FileText className="w-5 h-5" /> OD Requests

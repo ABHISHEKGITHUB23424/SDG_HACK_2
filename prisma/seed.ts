@@ -19,6 +19,15 @@ async function main() {
         }
     });
 
+    await prisma.user.create({
+        data: {
+            name: "Admin",
+            email: "admin@academy.edu",
+            role: "ADMIN",
+            passwordHash: "admin123"
+        }
+    });
+
     const students = await Promise.all([
         prisma.student.create({
             data: {

@@ -41,12 +41,23 @@ contestsRouter.post("/", async (req: Request, res: Response, next: NextFunction)
             externalId: z.string(),
             scheduledAt: z.string(),
             durationMins: z.number().int(),
-            studentIds: z.array(z.string()).optional()
+            studentIds: z.array(z.string()).optional(),
+            targetClass: z.string().optional()
         }).parse(req.body);
 
-        const studentIds = parsed.studentIds && parsed.studentIds.length > 0
-            ? parsed.studentIds
-            : (await prisma.student.findMany()).map(s => s.id);
+        let studentIds = parsed.studentIds || [];
+
+        if (studentIds.length === 0) {
+            let whereClause = {};
+            if (parsed.targetClass === "CSEA") {
+                whereClause = { rollNo: { startsWith: "CS" } }; // e.g., CS101, CS102
+            } else if (parsed.targetClass === "ECEA") {
+                whereClause = { rollNo: { startsWith: "EC" } };
+            }
+
+            const students = await prisma.student.findMany({ where: whereClause });
+            studentIds = students.map(s => s.id);
+        }
 
         const contest = await prisma.contest.create({
             data: {
