@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sora, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/AuthProvider";
 import QueryProvider from "@/components/QueryProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"], variable: '--font-sora' });
+const ibmPlexMono = IBM_Plex_Mono({ 
+  subsets: ["latin"], 
+  weight: ['400', '600'], 
+  variable: '--font-ibm' 
+});
 
 export const metadata: Metadata = {
-  title: "Staff Success Platform",
-  description: "Academic Risk & Success Intelligence Platform",
+  title: "Deep Scanner — Eligibility Intelligence",
+  description: "Advanced Student Auditing & Decision Support System",
 };
 
 export default function RootLayout({
@@ -17,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>
+    <html lang="en" className={`dark ${sora.variable} ${ibmPlexMono.variable}`}>
+      <body className={`${sora.className} font-sans`}>
         <AuthProvider>
           <QueryProvider>
             {children}

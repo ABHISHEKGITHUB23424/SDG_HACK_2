@@ -3,6 +3,8 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
+    console.log("Seeding databases with massive departments...");
+
     await prisma.riskReport.deleteMany({});
     await prisma.oDRequest.deleteMany({});
     await prisma.participant.deleteMany({});
@@ -15,7 +17,7 @@ async function main() {
             name: "Staff",
             email: "staff@academy.edu",
             role: "STAFF",
-            passwordHash: "staff123" // Note: in real world, hash this!
+            passwordHash: "staff123"
         }
     });
 
@@ -28,53 +30,69 @@ async function main() {
         }
     });
 
-    const students = await Promise.all([
-        prisma.student.create({
-            data: {
-                name: "Alice Johnson",
-                rollNo: "CS101",
-                cgpa: 8.5,
-                githubId: "alicejs",
-                hackathonCount: 3,
-                semesterHistory: JSON.stringify([10, 8, 9]) // e.g. events attended per semester
-            }
-        }),
-        prisma.student.create({
-            data: {
-                name: "Bob Smith",
-                rollNo: "CS102",
-                cgpa: 7.2,
-                githubId: "bobcoder",
-                hackathonCount: 1,
-                semesterHistory: JSON.stringify([5, 4, 1]) // significant drop
-            }
-        }),
-        prisma.student.create({
-            data: {
-                name: "Charlie Brown",
-                rollNo: "CS103",
-                cgpa: 9.0,
-                githubId: "charlieops",
-                hackathonCount: 5,
-                semesterHistory: JSON.stringify([8, 9, 10])
-            }
-        })
-    ]);
+    const departments = [
+        { name: "CSE", code: "CS", count: 2000 },
+        { name: "ECE", code: "EC", count: 100 },
+        { name: "EEE", code: "EE", count: 100 },
+        { name: "MECH", code: "ME", count: 100 },
+        { name: "CIVIL", code: "CE", count: 100 },
+        { name: "AIDS", code: "AD", count: 100 },
+        { name: "AIML", code: "AL", count: 100 },
+        { name: "VLSI", code: "VL", count: 100 },
+        { name: "CSBS", code: "CB", count: 100 },
+        { name: "BME", code: "BM", count: 100 },
+        { name: "IT", code: "IT", count: 100 },
+        { name: "ACT", code: "AC", count: 100 },
+    ];
 
-    const now = new Date();
-    const contest = await prisma.contest.create({
-        data: {
-            title: "Global AI Hackathon 2026",
-            startTime: new Date(now.getTime() - 20 * 60000), // 20 mins ago
-            participants: {
-                create: [
-                    { studentId: students[0].id, status: "JOINED" },
-                    { studentId: students[1].id, status: "NOT_JOINED" }, // Not joined, passed 15 minutes!
-                    { studentId: students[2].id, status: "PENDING" }
-                ]
-            }
+    const studentBatch: any[] = [];
+    const passwordHash = "password123";
+    const year = 2024;
+
+    for (const dept of departments) {
+        // --- STAFF GENERATION ---
+        const staffCount = dept.code === "CS" ? 200 : 20;
+        const staffBatch: any[] = [];
+        for (let i = 1; i <= staffCount; i++) {
+            const paddedNumber = String(i).padStart(4, "0");
+            const uniqueId = `24${dept.code}${paddedNumber}`;
+            staffBatch.push({
+                name: `Staff ${dept.name} ${i}`,
+                email: `${uniqueId.toLowerCase()}@academy.edu`,
+                role: "STAFF",
+                passwordHash: "password123"
+            });
         }
-    });
+        await prisma.user.createMany({ data: staffBatch });
+        console.log(`Inserted ${staffCount} STAFF for ${dept.name}`);
+
+        // --- STUDENT GENERATION ---
+        for (let i = 1; i <= dept.count; i++) {
+            const paddedNumber = String(i).padStart(4, "0");
+            const rollNo = `24${dept.code}${paddedNumber}`;
+            studentBatch.push({
+                name: `Student ${dept.name} ${i}`,
+                rollNo: rollNo,
+                year,
+                department: dept.name,
+                passwordHash,
+                cgpa: 8.5,
+                githubId: `github_${rollNo.toLowerCase()}`,
+                hackathonCount: Math.floor(Math.random() * 3),
+                semesterHistory: JSON.stringify([10, 8, 9])
+            });
+        }
+    }
+
+    // SQLite has a maximum number of variables per query, so we chunk the inserts
+    const chunkSize = 500;
+    for (let i = 0; i < studentBatch.length; i += chunkSize) {
+        const chunk = studentBatch.slice(i, i + chunkSize);
+        await prisma.student.createMany({
+            data: chunk
+        });
+        console.log(`Inserted ${i + chunk.length} / ${studentBatch.length} students`);
+    }
 
     console.log("Seeding complete!");
 }

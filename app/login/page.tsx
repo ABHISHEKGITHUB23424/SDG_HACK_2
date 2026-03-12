@@ -14,8 +14,8 @@ type LoginType = "student" | "staff" | "admin";
 export default function LoginPage() {
     const [loginType, setLoginType] = useState<LoginType>("staff");
 
-    const [email, setEmail] = useState("staff@academy.edu");
-    const [password, setPassword] = useState("staff123");
+    const [email, setEmail] = useState("24cs0001@academy.edu");
+    const [password, setPassword] = useState("password123");
     const [error, setError] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
@@ -28,8 +28,8 @@ export default function LoginPage() {
             setEmail("admin@academy.edu");
             setPassword("admin123");
         } else if (type === "staff") {
-            setEmail("staff@academy.edu");
-            setPassword("staff123");
+            setEmail("24cs0001@academy.edu");
+            setPassword("password123");
         } else {
             setEmail("");
             setPassword("");
@@ -45,15 +45,21 @@ export default function LoginPage() {
         }
 
         setIsLoading(true);
+
+        let finalEmail = email;
+        if (loginType === 'staff' && !email.includes('@')) {
+            finalEmail = `${email.toLowerCase()}@academy.edu`;
+        }
+
         const res = await signIn("credentials", {
-            email,
+            email: finalEmail,
             password,
             redirect: false,
         });
 
         if (res?.error) {
             setIsLoading(false);
-            setError(`Invalid credentials // Try ${loginType === "admin" ? "admin@academy.edu / admin123" : "staff@academy.edu / staff123"}`);
+            setError(`Invalid credentials // Try ${loginType === "admin" ? "admin@academy.edu / admin123" : "24cs0001@academy.edu / password123"}`);
         } else {
             if (loginType === "admin") {
                 router.push("/admin/dashboard");
@@ -168,7 +174,9 @@ export default function LoginPage() {
                                 {loginType !== "student" ? (
                                     <>
                                         <div className="space-y-2">
-                                            <label className="text-xs uppercase font-bold tracking-wider text-slate-400">Email Address</label>
+                                            <label className="text-xs uppercase font-bold tracking-wider text-slate-400">
+                                                {loginType === "staff" ? "Email Address or Staff ID" : "Email Address"}
+                                            </label>
                                             <div className="relative">
                                                 <Input
                                                     type="email"

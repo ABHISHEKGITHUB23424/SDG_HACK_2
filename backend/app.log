@@ -2033,3 +2033,963 @@
 {"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-11T11:39:07.711Z"}
 {"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-11T11:39:32.370Z"}
 {"level":"error","message":"[ERROR] ZodError: [\n  {\n    \"code\": \"invalid_value\",\n    \"values\": [\n      \"LeetCode\",\n      \"SkillRack\",\n      \"Manual\"\n    ],\n    \"path\": [\n      \"platform\"\n    ],\n    \"message\": \"Invalid option: expected one of \\\"LeetCode\\\"|\\\"SkillRack\\\"|\\\"Manual\\\"\"\n  }\n]\n    at <anonymous> (C:\\SEG_HACK_2\\backend\\src\\routes\\contests.ts:45:12)\n    at Layer.handleRequest (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\SEG_HACK_2\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:582:12)\n    at next (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:291:5)\n    at router.handle (C:\\SEG_HACK_2\\backend\\node_modules\\router\\index.js:186:3)","timestamp":"2026-03-11T11:39:32.375Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-11T11:39:54.641Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Legendary Coders at 3434-03-11T21:24:00.000Z","timestamp":"2026-03-11T11:39:54.683Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-11T11:39:54.684Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T11:41:15.830Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T13:49:16.053Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T14:24:22.664Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T14:24:32.680Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:24:33.181Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-11T14:24:40.578Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-11T14:24:40.586Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-11T14:24:40.592Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-11T14:24:42.212Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-11T14:24:42.212Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:24:43.211Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-11T14:24:47.293Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-11T14:24:48.219Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:24:53.230Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:03.242Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:13.264Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:23.292Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:33.319Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:43.342Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:25:53.362Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:03.374Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:13.387Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:23.397Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:33.418Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-11T14:26:35.537Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-11T14:26:35.562Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #2 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-11T14:26:35.564Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:35.571Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-11T14:26:40.638Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:45.589Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/check","timestamp":"2026-03-11T14:26:48.637Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-11T14:26:48.641Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-11T14:26:48.643Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:50.239Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/check","timestamp":"2026-03-11T14:26:54.254Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-11T14:26:54.259Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-11T14:26:54.262Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:26:55.820Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/call/cmmg23u110002gfp8mv5j6far","timestamp":"2026-03-11T14:27:01.586Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-11T14:27:01.614Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #3 for Rakesh A (Result: FAIL)","timestamp":"2026-03-11T14:27:01.615Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:27:01.622Z"}
+{"level":"error","message":"[SIMULATOR] Student Rakesh A did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-11T14:27:06.690Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Rakesh A for Legendary Coders","timestamp":"2026-03-11T14:27:06.691Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:32:05.300Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:35:31.169Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:35:41.180Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:35:51.191Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:01.204Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:11.216Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:21.236Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:31.246Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:41.264Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:36:51.285Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:01.297Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:11.309Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:21.321Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:31.337Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:41.350Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:37:51.368Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:01.381Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:11.394Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:21.406Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:31.417Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:41.430Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmg25iy3000ilty6nqguuozo/trigger-auto","timestamp":"2026-03-11T14:38:47.751Z"}
+{"level":"info","message":"[WORKER] Checking participation for Legendary Coders (LeetCode)","timestamp":"2026-03-11T14:38:47.756Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-34","timestamp":"2026-03-11T14:38:47.758Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Rakesh A (+919876543212)","timestamp":"2026-03-11T14:38:49.367Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #4 for Rakesh A (Result: SUCCESS)","timestamp":"2026-03-11T14:38:49.367Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:38:51.443Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Rakesh A","timestamp":"2026-03-11T14:38:54.437Z"}
+{"level":"info","message":"[CRON] Checked 4 students. Joined: 3, Missing: 1","timestamp":"2026-03-11T14:38:55.369Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmg25iy3000ilty6nqguuozo","timestamp":"2026-03-11T14:39:01.461Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:09:46.353Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:09:56.366Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:06.382Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:16.394Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:26.406Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:36.418Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:46.431Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:10:56.444Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:11:06.458Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:11:16.469Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T15:11:26.489Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-11T15:39:27.086Z"}
+{"level":"info","message":"[STARTUP] Scheduled 0 contest monitors","timestamp":"2026-03-11T15:39:27.093Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:08:53.855Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:09:03.886Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:09:05.705Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:09:21.336Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:10:44.575Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:12.051Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:19.500Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:29.517Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:31.732Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:32.032Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:41.842Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:11:54.550Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:12:04.558Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:21:32.357Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:21:42.439Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:21:44.278Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:21:54.297Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:22:04.315Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:22:14.329Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:31:55.087Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:05.105Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:15.119Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:25.132Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:35.143Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:45.162Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:32:55.174Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:05.193Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:15.205Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:25.216Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:35.226Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:45.240Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:33:55.260Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:05.286Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:15.301Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:25.324Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:35.336Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:45.349Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:34:55.390Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:05.433Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:15.455Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:25.475Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:35.521Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:45.538Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-11T16:35:50.827Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for XYZ at 2026-12-13T23:15:00.000Z","timestamp":"2026-03-11T16:35:50.914Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:35:50.919Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:36:00.955Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:36:02.122Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-11T16:36:08.642Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T16:36:08.647Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T16:36:08.648Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:36:10.169Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:36:20.183Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:36:26.817Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:37:49.659Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:39:13.592Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:41:20.365Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:41:46.465Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:41:57.130Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:44:38.553Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:45:46.215Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:45:49.511Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:45:59.551Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:46:09.564Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:46:19.575Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:46:29.582Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:46:39.601Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:46:49.617Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:47:00.685Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-11T16:47:03.392Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T16:47:03.394Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T16:47:03.396Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:47:04.906Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:47:11.371Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:47:13.265Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T16:47:14.552Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:48:32.412Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:48:34.333Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T16:48:36.204Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:01:46.407Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:01:56.419Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:01:59.171Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:02:09.290Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:02:19.305Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:02:29.368Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:02:38.770Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:02:49.361Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:04:38.882Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:04:48.934Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:04:59.021Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:09.186Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:19.283Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:29.474Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:39.507Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:49.533Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/trigger-auto","timestamp":"2026-03-11T17:05:53.380Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:05:53.526Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:05:53.631Z"}
+{"level":"info","message":"[CRON] Checked 0 students. Joined: 0, Missing: 0","timestamp":"2026-03-11T17:05:55.258Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:05:59.546Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:09.559Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:19.690Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:29.721Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:39.748Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:49.838Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:06:59.921Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:07:09.940Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:07:19.966Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:07:30.004Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:07:40.028Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:07:50.110Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:00.140Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:10.159Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:20.184Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:30.196Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:40.210Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:08:50.221Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:00.252Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:10.300Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:20.315Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:30.327Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:40.339Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:09:50.352Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:00.367Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:10.392Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:20.478Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:30.493Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:40.502Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:10:50.592Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:00.611Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:10.624Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:20.643Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:30.667Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:40.725Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:11:50.745Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:01.165Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:11.224Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:21.237Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:31.260Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:41.272Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:12:51.283Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:01.295Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:11.310Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:21.322Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:31.333Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:41.345Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:13:51.363Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:01.374Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:11.387Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:21.399Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:31.413Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:41.429Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:14:51.440Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:01.452Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:11.467Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:21.629Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:31.645Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:41.664Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:15:51.677Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:01.733Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:11.884Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:22.062Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:32.130Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:42.188Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:16:52.237Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:02.272Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:12.388Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:22.407Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:32.425Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:42.558Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:17:52.566Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:02.578Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:12.666Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:22.832Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:32.844Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:42.857Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:18:52.874Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:02.891Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:12.902Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:22.916Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:32.931Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:42.948Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:19:52.963Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:02.975Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:12.986Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:23.004Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:33.172Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:43.184Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:20:53.196Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:03.208Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:13.219Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:23.226Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:33.236Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:43.267Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:21:53.323Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:22:03.386Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:22:13.395Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:22:23.406Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:22:33.422Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:24:43.282Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-11T17:24:51.693Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:24:51.695Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:24:51.696Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:24:53.201Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:03.219Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:16.847Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:17.635Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:26.895Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-11T17:25:27.019Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:25:27.021Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:25:27.021Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:27.655Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:28.544Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:37.106Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:25:48.014Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:26:09.272Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:26:29.363Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:26:39.892Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:26:50.256Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:26:50.273Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:27:03.582Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:27:03.771Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:27:15.090Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:27:15.092Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:27:26.237Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:27:26.730Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:27:37.652Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:27:41.576Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:27:50.383Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:27:52.116Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:27:55.881Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:00.398Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:05.909Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:10.479Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:12.762Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:17.321Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:20.544Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:27.809Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:30.648Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:28:35.302Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:39.252Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:40.658Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:28:47.917Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:28:50.313Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:28:50.755Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:28:58.709Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:00.838Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:29:01.025Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:10.158Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:15.542Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:29:20.429Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:21.012Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:22.719Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:30.858Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:29:31.007Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:31.016Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:33.982Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:40.964Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:29:42.344Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:42.345Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:44.322Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:50.980Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/trigger-auto","timestamp":"2026-03-11T17:29:51.491Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:29:51.510Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:29:51.511Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:29:52.743Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:29:52.889Z"}
+{"level":"info","message":"[CRON] Checked 0 students. Joined: 0, Missing: 0","timestamp":"2026-03-11T17:29:53.040Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:29:54.455Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:01.044Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:03.092Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:03.094Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:04.493Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:11.055Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:13.258Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:13.260Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:14.879Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:21.069Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:23.406Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:23.416Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:25.042Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/trigger-auto","timestamp":"2026-03-11T17:30:25.161Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:30:25.166Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:30:25.167Z"}
+{"level":"info","message":"[CRON] Checked 0 students. Joined: 0, Missing: 0","timestamp":"2026-03-11T17:30:26.677Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:31.093Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:33.420Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:33.579Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:35.051Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:41.112Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:43.435Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:43.597Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:45.069Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:51.130Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:30:53.454Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:30:53.622Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:30:55.094Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:02.010Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:03.640Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:04.146Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:04.891Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:05.613Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:05.815Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:10.550Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:11.818Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:14.091Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:16.076Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:21.242Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:22.072Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:24.110Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:26.096Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:31.266Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:32.096Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:34.199Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:36.185Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:41.763Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:42.781Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:44.427Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:46.480Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:51.792Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:31:53.066Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:31:54.547Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:31:56.793Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:02.040Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:03.226Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:04.731Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:32:06.879Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:12.664Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:15.592Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:15.829Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:32:17.726Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-11T17:32:19.319Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-11T17:32:19.340Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-11T17:32:19.344Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:32:22.585Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:23.783Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:24.626Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:33.320Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:33.586Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:34.924Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:35.157Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:32:38.650Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:44.630Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:45.058Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:45.489Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:32:49.996Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:32:55.147Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:32:55.573Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:00.166Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:05.328Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:05.787Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:11.259Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:14.935Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:15.535Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:16.102Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:21.755Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:26.053Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:26.912Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:27.363Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:32.169Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:37.229Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:37.331Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:37.730Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:44.860Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:47.619Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:48.066Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:49.242Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:33:55.904Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:33:57.850Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:33:58.497Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:00.213Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:06.281Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:34:08.250Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:34:10.675Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:17.190Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:34:23.497Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:34:23.502Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:27.445Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:34:33.898Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:34:33.932Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:37.745Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:34:44.007Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:34:44.267Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:47.947Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:34:54.069Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:34:55.003Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:34:57.980Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:04.256Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:05.294Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:08.011Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:14.301Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:19.165Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:19.180Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:24.345Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:29.360Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:29.395Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:34.370Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:39.404Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:39.427Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:44.407Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:49.434Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:49.451Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:35:54.446Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:35:59.452Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:35:59.486Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:04.481Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:09.475Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:09.510Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:14.504Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:19.521Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:19.556Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:24.544Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:29.572Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:29.603Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:34.586Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:39.605Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:39.629Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:44.622Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:49.632Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:49.652Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:36:54.653Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:36:59.652Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:36:59.678Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:37:04.678Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:37:09.675Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:37:09.810Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:37:14.707Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-11T17:37:19.691Z"}
+{"level":"info","message":"[REQ] GET /api/contests/1","timestamp":"2026-03-11T17:37:19.836Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-11T17:37:24.732Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T02:57:20.500Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:04:48.600Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:04:58.616Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:05:33.393Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:05:39.862Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:06:33.789Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:06:35.987Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:06:54.529Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:07:52.263Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:09:02.242Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-12T03:24:41.547Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for XYZ at 2026-12-13T23:15:00.000Z","timestamp":"2026-03-12T03:24:41.633Z"}
+{"level":"info","message":"[STARTUP] Scheduled 1 contest monitors","timestamp":"2026-03-12T03:24:41.633Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:25:42.976Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:25:49.718Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:25:58.242Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:26:08.280Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:26:18.327Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:26:20.268Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:26:30.374Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:26:32.410Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:26:42.450Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:26:52.568Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:02.593Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:12.606Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:22.623Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:27:29.950Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:32.637Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:33.103Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-12T03:27:37.019Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-12T03:27:37.025Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-12T03:27:37.026Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:38.537Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:42.653Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-12T03:27:44.484Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-12T03:27:44.579Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-12T03:27:44.601Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:46.208Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:27:52.715Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:29:08.666Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:29:12.423Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/trigger-auto","timestamp":"2026-03-12T03:29:16.378Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-12T03:29:16.386Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-12T03:29:16.388Z"}
+{"level":"info","message":"[CRON] Checked 0 students. Joined: 0, Missing: 0","timestamp":"2026-03-12T03:29:17.920Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:29:22.436Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:29:32.453Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:29:38.692Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:29:48.714Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:31:13.167Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:31:25.947Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:31:58.956Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:32:17.506Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:32:28.393Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:33:20.267Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:33:35.519Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:08.789Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:17.772Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:24.075Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:26.097Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:32.277Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:34.563Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmm9g81l0000no4e5sa36ok6/check","timestamp":"2026-03-12T03:34:44.365Z"}
+{"level":"info","message":"[WORKER] Checking participation for XYZ (LeetCode)","timestamp":"2026-03-12T03:34:44.368Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-80","timestamp":"2026-03-12T03:34:44.369Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:44.580Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:45.882Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:34:55.897Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:35:07.133Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:35:17.144Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:35:29.763Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmm9g81l0000no4e5sa36ok6","timestamp":"2026-03-12T03:36:11.092Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-12T03:36:30.385Z"}
+{"level":"error","message":"[STARTUP] Error fetching scheduled contests: \nInvalid `prisma.contest.findMany()` invocation in\nC:\\SEG_HACK_2\\backend\\src\\index.ts:32:56\n\n  29 logger.info(`[STARTUP] Express server listening on port ${env.PORT}`);\n  30 \n  31 try {\n→ 32     const scheduledContests = await prisma.contest.findMany(\nThe table `main.Contest` does not exist in the current database.","timestamp":"2026-03-12T03:36:30.395Z"}
+{"level":"info","message":"[STARTUP] Express server listening on port 4000","timestamp":"2026-03-12T03:37:42.311Z"}
+{"level":"info","message":"[STARTUP] Scheduled 0 contest monitors","timestamp":"2026-03-12T03:37:42.319Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:38:32.012Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:38:42.104Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T03:38:52.542Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:38:53.107Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:03.451Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:13.777Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:24.188Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:34.234Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:44.494Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmx2jg1000khx76wqhyla0d/check","timestamp":"2026-03-12T03:39:46.441Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly LeetCode #435 (LeetCode)","timestamp":"2026-03-12T03:39:46.444Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-435","timestamp":"2026-03-12T03:39:46.446Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:48.396Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:39:58.795Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:40:13.116Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:40:23.610Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:40:33.622Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:40:43.635Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:40:53.647Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:03.665Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:13.682Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:23.697Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:33.713Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:43.726Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:41:53.739Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:03.750Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:13.766Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:23.784Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:33.805Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:43.820Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:42:53.836Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:03.862Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:13.880Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:23.903Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:33.938Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:43.965Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:43:53.987Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:04.007Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:14.048Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:24.064Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:34.082Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:44.116Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:44:54.146Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:04.170Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:14.195Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:24.219Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:34.250Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:44.279Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:45:54.299Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:04.319Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:14.346Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:24.374Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:34.395Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:44.415Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:46:54.441Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:04.457Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:14.472Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:24.495Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:34.525Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:44.539Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:47:54.560Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:04.580Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:14.601Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:24.619Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:34.641Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:44.657Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:48:54.675Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:04.692Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:14.720Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:24.744Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:34.771Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:44.801Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:49:54.837Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:04.855Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:14.874Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:24.898Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:34.924Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:44.947Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:50:54.972Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:04.987Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:15.017Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:25.038Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:35.063Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:45.097Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:51:55.131Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:05.150Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:15.169Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:25.192Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:35.213Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:45.232Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:52:55.268Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:05.290Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:15.308Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:25.325Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:35.360Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:45.378Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:53:55.403Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:05.433Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:15.445Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:25.489Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:35.510Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:45.532Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:54:55.558Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:05.583Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:15.612Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:25.644Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:35.668Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:45.686Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:55:55.720Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:05.763Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:15.786Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:25.807Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:35.829Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:45.854Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:56:55.872Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:05.899Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:15.917Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:25.938Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:35.983Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:46.010Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:57:56.029Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:06.053Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:16.072Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:26.088Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:36.110Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:46.133Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:58:56.167Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:06.185Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:16.204Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:26.216Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:36.229Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:46.248Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T03:59:56.257Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:06.272Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:17.337Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:27.384Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:37.410Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:47.426Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:00:57.452Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:07.470Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:17.488Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:27.512Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:37.533Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:47.559Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:01:57.592Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:07.613Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:17.640Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:27.654Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:37.669Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:47.693Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:02:57.716Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:07.734Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:17.753Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:27.796Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:37.824Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:47.846Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:03:57.867Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:07.889Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:17.911Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:27.937Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:37.961Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:47.985Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:04:58.012Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:08.044Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:18.063Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:28.078Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:38.099Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:48.115Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:05:58.137Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:08.151Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:18.170Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:28.186Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:38.206Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:48.226Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:06:58.246Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:08.267Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:18.284Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:28.308Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:38.339Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:48.367Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:07:58.396Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:08.421Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:18.443Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:28.456Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:38.472Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:48.492Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:08:58.511Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:08.525Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:18.547Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:28.566Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:38.583Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:48.606Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:09:58.631Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:08.651Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:18.672Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:28.692Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:38.712Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:48.734Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:10:58.762Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:08.788Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:18.808Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:28.825Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:38.840Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:48.858Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:11:58.875Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:08.889Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:18.907Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:28.929Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:38.947Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:48.967Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:12:58.983Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:09.003Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:19.024Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:29.044Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:39.079Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:49.098Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:13:59.121Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:09.162Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:19.417Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:29.436Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:39.449Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:49.462Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:14:59.482Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:09.507Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:19.528Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:29.557Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:39.592Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:49.624Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:15:59.649Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:09.667Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:19.690Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:29.711Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:39.731Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:49.759Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:16:59.779Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:09.809Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:19.832Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:29.853Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:39.870Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:49.887Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:17:59.907Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:18:09.922Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:18:19.946Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:18:29.977Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:18:40.008Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:18:50.029Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:00.046Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:10.067Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:20.095Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:30.114Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:40.149Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:19:50.171Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:00.214Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:20:06.280Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:09.780Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:10.224Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmx2jg1000khx76wqhyla0d/check","timestamp":"2026-03-12T04:20:14.347Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly LeetCode #435 (LeetCode)","timestamp":"2026-03-12T04:20:14.352Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-435","timestamp":"2026-03-12T04:20:14.353Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:16.208Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmx2jg1000khx76wqhyla0d/call/cmmmx2jbv0000hx76c9yt3n0h","timestamp":"2026-03-12T04:20:17.221Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Student CSE 1 (+911234567890)","timestamp":"2026-03-12T04:20:17.289Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #1 for Student CSE 1 (Result: SUCCESS)","timestamp":"2026-03-12T04:20:17.290Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:17.294Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:20.239Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Student CSE 1","timestamp":"2026-03-12T04:20:22.481Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:27.333Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:30.277Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:37.353Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:40.300Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:20:50.318Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:00.342Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:11.919Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:21:12.657Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:22.051Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:21:22.672Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:32.072Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:21:32.691Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:42.112Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:21:42.704Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:21:52.150Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:21:52.713Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:02.170Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:22:02.734Z"}
+{"level":"info","message":"[REQ] POST /api/contests","timestamp":"2026-03-12T04:22:12.006Z"}
+{"level":"info","message":"[SCHEDULER] Scheduled monitor for Weekly-contest-100 at 2026-12-11T23:15:00.000Z","timestamp":"2026-03-12T04:22:12.087Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:22:12.092Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:12.199Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:12.399Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/check","timestamp":"2026-03-12T04:22:21.649Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:22:21.653Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:22:21.654Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:22.220Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:22.409Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:23.166Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:32.244Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:33.184Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/check","timestamp":"2026-03-12T04:22:33.812Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:22:33.816Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:22:33.817Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:35.334Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/check","timestamp":"2026-03-12T04:22:35.493Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:22:35.496Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:22:35.497Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:37.036Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/trigger-auto","timestamp":"2026-03-12T04:22:41.629Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:22:41.633Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:22:41.634Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:42.261Z"}
+{"level":"info","message":"[CRON] Checked 0 students. Joined: 0, Missing: 0","timestamp":"2026-03-12T04:22:43.143Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/check","timestamp":"2026-03-12T04:22:44.869Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:22:44.873Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:22:44.874Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:46.395Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:22:52.276Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:22:54.262Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:02.290Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:23:04.394Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:12.313Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:22.326Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:32.359Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:23:32.911Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:42.379Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:23:42.930Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:23:52.392Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:24:02.403Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmx2jg1000khx76wqhyla0d/trigger-auto","timestamp":"2026-03-12T04:24:03.445Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly LeetCode #435 (LeetCode)","timestamp":"2026-03-12T04:24:03.449Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-435","timestamp":"2026-03-12T04:24:03.450Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Student CSE 1 (+911234567890)","timestamp":"2026-03-12T04:24:05.263Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #2 for Student CSE 1 (Result: SUCCESS)","timestamp":"2026-03-12T04:24:05.264Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Student CSE 1","timestamp":"2026-03-12T04:24:10.400Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Student CSE 2 (+911234567890)","timestamp":"2026-03-12T04:24:11.349Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #3 for Student CSE 2 (Result: FAIL)","timestamp":"2026-03-12T04:24:11.359Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:24:12.416Z"}
+{"level":"error","message":"[SIMULATOR] Student Student CSE 2 did not answer the Voice Call. Activating AI Chatbot Fallback...","timestamp":"2026-03-12T04:24:16.496Z"}
+{"level":"info","message":"[FALLBACK] Sending WhatsApp Nudge to Student CSE 2 for Weekly LeetCode #435","timestamp":"2026-03-12T04:24:16.497Z"}
+{"level":"info","message":"[TRIGGER] Vapi AI Call for Student CSE 3 (+911234567890)","timestamp":"2026-03-12T04:24:17.413Z"}
+{"level":"warn","message":"[SIMULATOR] Sequence #4 for Student CSE 3 (Result: SUCCESS)","timestamp":"2026-03-12T04:24:17.415Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmx2jg1000khx76wqhyla0d","timestamp":"2026-03-12T04:24:22.431Z"}
+{"level":"info","message":"[SIMULATOR] Call COMPLETED for Student CSE 3","timestamp":"2026-03-12T04:24:22.498Z"}
+{"level":"info","message":"[CRON] Checked 10 students. Joined: 0, Missing: 10","timestamp":"2026-03-12T04:24:23.418Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:24:25.764Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:24:35.781Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:24:45.797Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:24:55.813Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:05.827Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:15.853Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:25.864Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:25:27.518Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:25:31.951Z"}
+{"level":"info","message":"[REQ] POST /api/contests/cmmmyolkh0002kp9j12tzvveu/check","timestamp":"2026-03-12T04:25:34.250Z"}
+{"level":"info","message":"[WORKER] Checking participation for Weekly-contest-100 (LeetCode)","timestamp":"2026-03-12T04:25:34.254Z"}
+{"level":"info","message":"[SIMULATION] Fetching participants from LeetCode for weekly-id","timestamp":"2026-03-12T04:25:34.256Z"}
+{"level":"info","message":"[REQ] GET /api/contests/cmmmyolkh0002kp9j12tzvveu","timestamp":"2026-03-12T04:25:35.780Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:35.891Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:45.943Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:25:55.957Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:06.051Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:16.070Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:26.095Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:36.122Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:46.160Z"}
+{"level":"info","message":"[REQ] GET /api/contests","timestamp":"2026-03-12T04:26:56.270Z"}

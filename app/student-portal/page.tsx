@@ -9,8 +9,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function StudentPortal() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [regNo, setRegNo] = useState("");
+    const [regNo, setRegNo] = useState("24CS0001");
+    const [password, setPassword] = useState("password123");
     const [studentName, setStudentName] = useState("");
+    const [studentDetails, setStudentDetails] = useState<any>(null);
+    const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     const [hackathons, setHackathons] = useState<any[]>([]);
 
@@ -18,14 +22,37 @@ export default function StudentPortal() {
     const [hackathonName, setHackathonName] = useState("");
     const [positionSecured, setPositionSecured] = useState("");
     const [proofUrl, setProofUrl] = useState("");
+    const [proofUrlError, setProofUrlError] = useState("");
+    const [isProofUrlValid, setIsProofUrlValid] = useState(false);
     const [platformLink, setPlatformLink] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (regNo.trim() && studentName.trim()) {
-            setIsLoggedIn(true);
-            fetchHackathons(regNo);
+        setError("");
+        setIsLoading(true);
+
+        try {
+            const res = await fetch("/api/student/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ regNo: regNo.toUpperCase(), password })
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                setStudentName(data.student.name);
+                setStudentDetails(data.student);
+                setIsLoggedIn(true);
+                fetchHackathons(data.student.rollNo);
+            } else {
+                const data = await res.json();
+                setError(data.error || "Authentication failed");
+            }
+        } catch (err) {
+            setError("Server connection failed");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -36,13 +63,36 @@ export default function StudentPortal() {
         }
     };
 
+    const handleProofUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const val = e.target.value;
+        setProofUrl(val);
+        const isValid = /^(https?:\/\/)?(www\.)?(drive|docs)\.google\.com\/.+/.test(val);
+
+        if (val && !isValid) {
+            setProofUrlError("Please provide a valid Google Drive link.");
+            setIsProofUrlValid(false);
+        } else if (isValid) {
+            setProofUrlError("");
+            setIsProofUrlValid(true);
+        } else {
+            setProofUrlError("");
+            setIsProofUrlValid(false);
+        }
+    };
+
     const handleSubmitProof = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!/^(https?:\/\/)?(www\.)?(drive|docs)\.google\.com\/.+/.test(proofUrl)) {
+            setProofUrlError("Please provide a valid Google Drive link.");
+            return;
+        }
+
         setIsSubmitting(true);
         const res = await fetch("/api/student-hackathons", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ studentName, regNo, hackathonName, positionSecured, proofUrl, platformLink })
+            body: JSON.stringify({ studentName, regNo: studentDetails.rollNo, hackathonName, positionSecured, proofUrl, platformLink })
         });
 
         if (res.ok) {
@@ -52,6 +102,8 @@ export default function StudentPortal() {
             setPositionSecured("");
             setProofUrl("");
             setPlatformLink("");
+            setProofUrlError("");
+            setIsProofUrlValid(false);
         }
         setIsSubmitting(false);
     };
@@ -66,29 +118,45 @@ export default function StudentPortal() {
                                 <GraduationCap className="w-8 h-8" />
                             </div>
                             <CardTitle className="text-2xl text-white font-bold tracking-tight">Student Portal</CardTitle>
-                            <CardDescription className="text-slate-400">Log in to upload Hackathon Proofs</CardDescription>
+                            <CardDescription className="text-slate-400">Secure entry for intelligence processing</CardDescription>
                         </CardHeader>
                         <CardContent>
                             <form onSubmit={handleLogin} className="space-y-4 pt-4">
+                                <AnimatePresence mode="wait">
+                                    {error && (
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            exit={{ opacity: 0, height: 0 }}
+                                            className="text-red-400 text-xs bg-red-500/10 p-3 rounded-md border border-red-500/20"
+                                        >
+                                            {error}
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                                 <div className="space-y-2">
                                     <label className="text-xs text-slate-400 uppercase font-bold tracking-wider">Register Number</label>
                                     <Input
                                         required
-                                        placeholder="e.g. RA20110030101"
-                                        className="bg-slate-950/50 border-slate-800 text-white focus-visible:ring-sky-500 h-11"
+                                        placeholder="e.g. 24CS0001"
+                                        className="bg-slate-950/50 border-slate-800 text-white focus-visible:ring-sky-500 h-11 uppercase"
                                         value={regNo} onChange={e => setRegNo(e.target.value)}
                                     />
+                                    <p className="text-[10px] text-slate-500 mt-1">Format: 24[DEPT][NO] (e.g. 24CS0001)</p>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs text-slate-400 uppercase font-bold tracking-wider">Full Name</label>
+                                    <label className="text-xs text-slate-400 uppercase font-bold tracking-wider">Password</label>
                                     <Input
                                         required
-                                        placeholder="Arjun Kumar"
+                                        type="password"
+                                        placeholder="••••••••"
                                         className="bg-slate-950/50 border-slate-800 text-white focus-visible:ring-sky-500 h-11"
-                                        value={studentName} onChange={e => setStudentName(e.target.value)}
+                                        value={password} onChange={e => setPassword(e.target.value)}
                                     />
                                 </div>
-                                <Button type="submit" className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold h-11 mt-4">Login Securely</Button>
+                                <Button type="submit" disabled={isLoading} className="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold h-11 mt-4">
+                                    {isLoading ? "Authenticating..." : "Login Securely"}
+                                </Button>
                             </form>
                         </CardContent>
                     </Card>
@@ -158,15 +226,19 @@ export default function StudentPortal() {
                                         </div>
                                     </div>
                                     <div className="space-y-1.5">
-                                        <label className="text-xs text-slate-400 uppercase font-bold tracking-wider">Proof Link (Google Drive, GitHub)</label>
+                                        <div className="flex justify-between items-center">
+                                            <label className="text-xs text-slate-400 uppercase font-bold tracking-wider">Proof Link (Google Drive)</label>
+                                            {isProofUrlValid && <span className="text-xs text-emerald-500 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full">Link Valid</span>}
+                                        </div>
                                         <div className="relative">
-                                            <Link className="absolute left-3 top-2.5 h-4 w-4 text-slate-500" />
+                                            <Link className={`absolute left-3 top-2.5 h-4 w-4 ${proofUrlError ? 'text-red-500' : isProofUrlValid ? 'text-emerald-500' : 'text-slate-500'}`} />
                                             <Input
-                                                required type="url" placeholder="https://"
-                                                className="bg-slate-950/50 border-slate-800 text-white pl-9"
-                                                value={proofUrl} onChange={e => setProofUrl(e.target.value)}
+                                                required type="url" placeholder="https://drive.google.com/..."
+                                                className={`bg-slate-950/50 text-white pl-9 transition-colors ${proofUrlError ? 'border-red-500 focus-visible:ring-red-500' : isProofUrlValid ? 'border-emerald-500 focus-visible:ring-emerald-500' : 'border-slate-800 focus-visible:ring-sky-500'}`}
+                                                value={proofUrl} onChange={handleProofUrlChange}
                                             />
                                         </div>
+                                        {proofUrlError && <p className="text-xs text-red-500 mt-1 font-medium">{proofUrlError}</p>}
                                     </div>
                                     <Button disabled={isSubmitting} type="submit" className="w-full bg-emerald-600 hover:bg-emerald-500 text-white">
                                         {isSubmitting ? "Uploading..." : <><Upload className="w-4 h-4 mr-2" /> Submit Proof</>}

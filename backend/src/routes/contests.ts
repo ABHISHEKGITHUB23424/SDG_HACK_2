@@ -48,15 +48,21 @@ contestsRouter.post("/", async (req: Request, res: Response, next: NextFunction)
         let studentIds = parsed.studentIds || [];
 
         if (studentIds.length === 0) {
-            let whereClause = {};
+            let whereClause: any = {};
             if (parsed.targetClass === "CSEA") {
-                whereClause = { rollNo: { startsWith: "CS" } }; // e.g., CS101, CS102
+                whereClause = { department: "CSE", section: "A" };
+            } else if (parsed.targetClass === "CSEB") {
+                whereClause = { department: "CSE", section: "B" };
             } else if (parsed.targetClass === "ECEA") {
-                whereClause = { rollNo: { startsWith: "EC" } };
+                whereClause = { department: "ECE", section: "A" };
+            } else {
+                // Default to all students if no specific class matches or is provided
+                whereClause = {};
             }
 
             const students = await prisma.student.findMany({ where: whereClause });
             studentIds = students.map(s => s.id);
+            logger.info(`[CONTEST] Enrolling ${studentIds.length} students for class ${parsed.targetClass}`);
         }
 
         const contest = await prisma.contest.create({

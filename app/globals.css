@@ -49,6 +49,30 @@
   }
 }
 
+@layer utilities {
+  .thin-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .thin-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .thin-scrollbar::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 20px;
+  }
+  .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+
+  .font-sora {
+    font-family: var(--font-sora);
+  }
+  .font-ibm {
+    font-family: var(--font-ibm);
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -56,5 +80,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sora);
   }
 }

@@ -83,5 +83,45 @@
     "proofUrl": "http://localhost:3000/student-portal",
     "platformLink": "http://localhost:3000/student-portal",
     "submittedAt": "2026-03-11T11:33:34.006Z"
+  },
+  {
+    "id": "h-1773244312432",
+    "studentName": "Student CSE 2000",
+    "regNo": "24CS2000",
+    "hackathonName": "KAAVAL HACK",
+    "positionSecured": "Runner Up",
+    "proofUrl": "https://drive.google.com/open?id=19zhl3eZJSq7WHcUCrmT7AbbRE5R1l1rk&authuser=1",
+    "platformLink": "https://unstop.com/hackathons/buildwithai-24-hour-international-innovation-hackathon-presidency-university-pu-bangalore-1656980",
+    "submittedAt": "2026-03-11T15:51:52.433Z"
+  },
+  {
+    "id": "h-1773244865361",
+    "studentName": "Student CSE 1",
+    "regNo": "24CS0001",
+    "hackathonName": "SIH",
+    "positionSecured": "Winner",
+    "proofUrl": "https://drive.google.com/open?id=1_BGIFOBCtRtfBS9niBdYGU9gz3Ya6qUK&authuser=1",
+    "platformLink": "httpshttps://unstop.com/hackathons?oppstatus=open&usertype=students&domain=2://unstop.com/",
+    "submittedAt": "2026-03-11T16:01:05.361Z"
+  },
+  {
+    "id": "h-1773289972038",
+    "studentName": "Student CSE 1",
+    "regNo": "24CS0001",
+    "hackathonName": "SDG_HACK",
+    "positionSecured": "Finalist",
+    "proofUrl": "https://drive.google.com/open?id=1_BGIFOBCtRtfBS9niBdYGU9gz3Ya6qUK&authuser=1",
+    "platformLink": "https://unstop.com/hackathons/buildwithai-24-hour-international-innovation-hackathon-presidency-university-pu-bangalore-1656980",
+    "submittedAt": "2026-03-12T04:32:52.038Z"
+  },
+  {
+    "id": "h-1773290070965",
+    "studentName": "Student CSE 18",
+    "regNo": "24CS0018",
+    "hackathonName": "SDG_HACK",
+    "positionSecured": "Finalist",
+    "proofUrl": "https://drive.google.com/open?id=1_BGIFOBCtRtfBS9niBdYGU9gz3Ya6qUK&authuser=1",
+    "platformLink": "https://unstop.com/hackathons/buildwithai-24-hour-international-innovation-hackathon-presidency-university-pu-bangalore-1656980",
+    "submittedAt": "2026-03-12T04:34:30.965Z"
   }
 ]

@@ -9,14 +9,18 @@ datasource db {
 }
 
 model Student {
-  id          String   @id @default(cuid())
-  name        String
-  rollNo      String   @unique
-  phone       String
-  email       String
-  leetcodeId  String?
-  skillrackId String?
-  createdAt   DateTime @default(now())
+  id           String   @id @default(cuid())
+  name         String
+  rollNo       String   @unique
+  year         Int      @default(2024)
+  department   String   @default("CSE")
+  section      String?  @default("A")
+  passwordHash String   @default("password123")
+  phone        String
+  email        String
+  leetcodeId   String?
+  skillrackId  String?
+  createdAt    DateTime @default(now())
 
   // Retro compatibility for existing UI
   cgpa            Float?  @default(0)

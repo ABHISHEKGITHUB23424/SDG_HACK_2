@@ -24,12 +24,14 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { PlusCircle, Activity, LayoutDashboard, Calendar } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { format } from "date-fns";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
 
 export default function ContestsListPage() {
+    const router = useRouter();
     const queryClient = useQueryClient();
     const [isCreateOpen, setIsCreateOpen] = useState(false);
 
@@ -56,9 +58,12 @@ export default function ContestsListPage() {
             }
             return json;
         },
-        onSuccess: () => {
+        onSuccess: (data) => {
             queryClient.invalidateQueries({ queryKey: ["contests"] });
             setIsCreateOpen(false);
+            if (data.success && data.data?.id) {
+                router.push(`/dashboard/contests/${data.data.id}/monitor`);
+            }
         },
         onError: (err) => {
             alert("Failed to create contest: " + err);

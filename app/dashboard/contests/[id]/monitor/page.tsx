@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import {
     PhoneCall,
@@ -26,8 +26,14 @@ import {
     UserCheck,
     MoreVertical,
     Calendar,
-    Zap
+    Zap,
+    Target,
+    Phone,
+    CheckCircle,
+    Clock
 } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { mockTeams } from "@/data/mockDatabase";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { format, formatDistanceToNow } from "date-fns";
@@ -39,6 +45,7 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
     const queryClient = useQueryClient();
     const [now, setNow] = useState(new Date());
     const [systemLogs, setSystemLogs] = useState<{ id: string; text: string; time: string; type: 'info' | 'success' | 'warn' | 'error' }[]>([]);
+    const [hasSynced, setHasSynced] = useState(false);
 
     // Update clock every second
     useEffect(() => {
@@ -308,7 +315,10 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
                     <div className="flex gap-4 items-start">
                         <div>
                             <div className="flex items-center gap-3">
-                                <h1 className="text-3xl font-bold tracking-tight">{contest.name}</h1>
+                                <h1 className="text-3xl font-black text-white flex items-center gap-3">
+                                    <Target className="w-8 h-8 text-indigo-400" />
+                                    Staff Command Center: {contest.name}
+                                </h1>
                                 <Badge variant="outline" className="border-indigo-500/50 text-indigo-400">
                                     {contest.platform}
                                 </Badge>
@@ -368,7 +378,10 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
                     <Button
                         variant="outline"
                         className="border-slate-800 bg-slate-900 hover:bg-slate-800"
-                        onClick={() => checkMutation.mutate()}
+                        onClick={() => {
+                            checkMutation.mutate();
+                            setHasSynced(true);
+                        }}
                         disabled={checkMutation.isPending}
                     >
                         {checkMutation.isPending ? (
@@ -445,102 +458,168 @@ export default function ContestMonitorPage({ params }: { params: { id: string } 
                 </Card>
             </div>
 
-            {/* Main Table */}
-            <Card className="bg-slate-900 border-slate-800 overflow-hidden relative z-10">
-                <CardHeader className="bg-slate-950/50 border-b border-slate-800">
-                    <div className="flex justify-between items-center">
-                        <CardTitle className="text-lg">Real-time Participation</CardTitle>
-                        <div className="text-xs text-slate-500 flex items-center">
-                            <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse" />
-                            Auto-refreshing every 10s
+            {/* Command Center Layout */}
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 relative z-10">
+                {/* Module 1: Live Contest Monitor */}
+                <Card className="bg-slate-900/60 border-slate-800 backdrop-blur-xl shadow-xl overflow-hidden flex flex-col h-full">
+                    <CardHeader className="border-b border-slate-800/50 bg-slate-900/40">
+                        <div className="flex justify-between items-center">
+                            <CardTitle className="text-xl text-white flex items-center gap-2">
+                                <Target className="w-5 h-5 text-indigo-400" /> Live Contest Monitor
+                            </CardTitle>
+                            <div className="text-xs text-slate-500 flex items-center">
+                                <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse" />
+                                Live DB Sync
+                            </div>
                         </div>
-                    </div>
-                </CardHeader>
-                <CardContent className="p-0">
-                    <Table>
-                        <TableHeader className="bg-slate-950/20">
-                            <TableRow className="border-slate-800 hover:bg-transparent">
-                                <TableHead className="w-[80px] text-slate-400">#</TableHead>
-                                <TableHead className="text-slate-300">Student Name</TableHead>
-                                <TableHead className="text-slate-300">Roll No</TableHead>
-                                <TableHead className="text-slate-300">Platform ID</TableHead>
-                                <TableHead className="text-slate-300">Status</TableHead>
-                                <TableHead className="text-slate-300">Call Status</TableHead>
-                                <TableHead className="text-slate-300 text-center">Nudges</TableHead>
-                                <TableHead className="text-slate-300 text-right">Actions</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {participations.map((p: any, idx: number) => {
-                                const callLog = contest.callLogs?.filter((cl: any) => cl.studentId === p.studentId).sort((a: any, b: any) => new Date(b.initiatedAt).getTime() - new Date(a.initiatedAt).getTime())[0];
-                                const identifier = contest.platform === "LeetCode" ? p.student.leetcodeId : p.student.skillrackId;
-                                const isCalling = callLog?.callStatus === "INITIATED" || callLog?.callStatus === "RINGING" || callLog?.callStatus === "IN_PROGRESS";
+                        <CardDescription className="text-slate-400">Track real-time contest participation and trigger auto-calls.</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-1 overflow-auto max-h-[600px]">
+                        <Table>
+                            <TableHeader className="bg-slate-950/50 sticky top-0 z-10">
+                                <TableRow className="border-slate-800 hover:bg-transparent">
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Student</TableHead>
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Dept/Sec</TableHead>
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Platform ID</TableHead>
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Status</TableHead>
+                                    <TableHead className="text-right text-slate-400 font-bold uppercase text-xs">Action</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {participations.map((p: any) => {
+                                    const callLog = contest.callLogs?.filter((cl: any) => cl.studentId === p.studentId).sort((a: any, b: any) => new Date(b.initiatedAt).getTime() - new Date(a.initiatedAt).getTime())[0];
+                                    const identifier = contest.platform === "LeetCode" ? p.student.leetcodeId : p.student.skillrackId;
+                                    const isCalling = callLog?.callStatus === "INITIATED" || callLog?.callStatus === "RINGING" || callLog?.callStatus === "IN_PROGRESS";
+                                    const isCallSuccess = callLog?.callStatus === "COMPLETED";
 
-                                return (
-                                    <TableRow key={p.id} className={`border-slate-800 hover:bg-slate-800/30 transition-colors ${p.status === 'MISSING' ? 'bg-red-500/5' : ''} ${isCalling ? 'bg-indigo-500/10' : ''}`}>
-                                        <TableCell className="text-slate-500">{idx + 1}</TableCell>
-                                        <TableCell className="font-medium text-slate-200">
-                                            <div className="flex items-center gap-2">
-                                                {p.student.name}
-                                                {isCalling && <span className="flex h-1.5 w-1.5 rounded-full bg-indigo-500 animate-ping" />}
-                                            </div>
-                                        </TableCell>
-                                        <TableCell className="text-slate-400 text-sm">{p.student.rollNo}</TableCell>
-                                        <TableCell className="font-mono text-xs text-slate-400">{identifier || "—"}</TableCell>
-                                        <TableCell>
-                                            <Badge className={
-                                                p.status === "JOINED" ? "bg-green-500/20 text-green-400 border-green-500/50" :
-                                                    p.status === "MISSING" ? "bg-red-500/20 text-red-500 border-red-500/50 pulse-missing" :
-                                                        p.status === "PENDING" ? "bg-amber-500/20 text-amber-500 border-amber-500/50" :
-                                                            "bg-slate-800 text-slate-400"
-                                            }>
-                                                {p.status === "JOINED" ? "✓ Joined" : p.status === "MISSING" ? "⚠ Missing" : "◌ Pending"}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>
-                                            {!callLog ? (
-                                                <span className="text-slate-600">—</span>
-                                            ) : (
-                                                <div className="flex items-center gap-2">
-                                                    <div className={`text-xs font-semibold ${callLog.callStatus === "COMPLETED" ? "text-green-400" :
-                                                        callLog.callStatus === "FAILED" || callLog.callStatus === "NO_ANSWER" ? "text-orange-400" :
-                                                            "text-blue-400"
-                                                        }`}>
-                                                        {isCalling && <RefreshCw className="inline-block w-3 h-3 mr-1 animate-spin" />}
-                                                        {callLog.callStatus}
-                                                    </div>
+                                    return (
+                                        <TableRow key={p.id} className={`border-slate-800 hover:bg-slate-800/30 transition-colors ${p.status === 'MISSING' ? 'bg-red-500/5' : ''} ${isCalling ? 'bg-indigo-500/10' : ''}`}>
+                                            <TableCell>
+                                                <div className="font-semibold text-slate-200 flex items-center gap-2">
+                                                    {p.student.name}
+                                                    {isCalling && <span className="flex h-1.5 w-1.5 rounded-full bg-indigo-500 animate-ping" />}
                                                 </div>
-                                            )}
+                                                <div className="text-xs text-slate-500 font-mono">{p.student.rollNo}</div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="text-xs text-slate-300 font-medium">{p.student.department} - {p.student.section || "A"}</div>
+                                            </TableCell>
+                                            <TableCell className="font-mono text-xs text-slate-400">{identifier || "—"}</TableCell>
+                                            <TableCell>
+                                                <Badge variant="outline" className={`${p.status === 'JOINED' ? 'border-emerald-500/30 text-emerald-400 bg-emerald-500/10' : p.status === 'MISSING' ? 'border-red-500/30 text-red-400 bg-red-500/10 pulse-missing' : 'border-amber-500/30 text-amber-400 bg-amber-500/10'}`}>
+                                                    {p.status === "JOINED" ? "Joined" : p.status === "MISSING" ? "Missing" : "Pending"}
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell className="text-right align-top">
+                                                {p.status === 'MISSING' ? (
+                                                    <div className="flex flex-col items-end gap-2 mt-1">
+                                                        <Button
+                                                            size="sm"
+                                                            onClick={() => callMutation.mutate(p.studentId)}
+                                                            disabled={!hasSynced || isCalling || isCallSuccess || callMutation.isPending}
+                                                            className={`w-36 transition-all shadow-md ${!hasSynced ? 'bg-slate-700 text-slate-400 cursor-not-allowed' : isCallSuccess ? 'bg-emerald-600 hover:bg-emerald-600 outline-none ring-0 text-white' : 'bg-indigo-600 hover:bg-indigo-500 text-white'}`}
+                                                        >
+                                                            {isCalling || callMutation.isPending ? (
+                                                                <span className="flex items-center gap-2 text-xs animate-pulse">
+                                                                    Connecting...
+                                                                </span>
+                                                            ) : isCallSuccess ? (
+                                                                <span className="flex items-center gap-2 text-xs">
+                                                                    <CheckCircle className="w-3.5 h-3.5" /> Call Initiated
+                                                                </span>
+                                                            ) : (
+                                                                <span className="flex items-center gap-2 text-xs">
+                                                                    <Phone className="w-3.5 h-3.5" /> Trigger AI Call
+                                                                </span>
+                                                            )}
+                                                        </Button>
+                                                        <AnimatePresence>
+                                                            {isCallSuccess && (
+                                                                <motion.p
+                                                                    initial={{ opacity: 0, height: 0 }}
+                                                                    animate={{ opacity: 1, height: 'auto' }}
+                                                                    className="text-[10px] text-emerald-400 mt-1 pb-1 origin-top text-right w-36"
+                                                                >
+                                                                    AI Voice Call Initiated: Contacting student.
+                                                                </motion.p>
+                                                            )}
+                                                        </AnimatePresence>
+                                                    </div>
+                                                ) : (
+                                                    <Button size="sm" variant="ghost" className={`${p.status === 'JOINED' ? 'text-emerald-500/80 hover:text-emerald-500/80' : 'text-amber-500/80 hover:text-amber-500/80'} cursor-default hover:bg-transparent mt-1`}>
+                                                        {p.status === 'JOINED' ? <CheckCircle className="w-4 h-4 mr-1.5" /> : <Clock className="w-4 h-4 mr-1.5" />}
+                                                        {p.status === 'JOINED' ? 'Verified' : 'Waiting...'}
+                                                    </Button>
+                                                )}
+                                            </TableCell>
+                                        </TableRow>
+                                    );
+                                })}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
+
+                {/* Module 2: Milestone Follow-up (Hackathon Pipeline) */}
+                <Card className="bg-slate-900/60 border-slate-800 backdrop-blur-xl shadow-xl overflow-hidden flex flex-col h-full">
+                    <CardHeader className="border-b border-slate-800/50 bg-slate-900/40">
+                        <CardTitle className="text-xl text-white flex items-center gap-2">
+                            <Clock className="w-5 h-5 text-fuchsia-400" /> Hackathon Pipeline
+                        </CardTitle>
+                        <CardDescription className="text-slate-400">Bridge the communication gap with deadline mapping.</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-1 overflow-auto max-h-[600px]">
+                        <Table>
+                            <TableHeader className="bg-slate-950/50 sticky top-0 z-10">
+                                <TableRow className="border-slate-800 hover:bg-transparent">
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Team</TableHead>
+                                    <TableHead className="text-slate-400 font-bold uppercase text-xs">Stage</TableHead>
+                                    <TableHead className="text-right text-slate-400 font-bold uppercase text-xs">Action / Status</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {mockTeams.map(team => (
+                                    <TableRow key={team.id} className="border-slate-800 hover:bg-slate-800/30 transition-colors">
+                                        <TableCell>
+                                            <div className="font-semibold text-slate-200">{team.name}</div>
                                         </TableCell>
-                                        <TableCell className="text-center">
-                                            <div className="flex justify-center gap-2">
-                                                {callLog?.whatsappSent && <MessageSquare className="w-4 h-4 text-green-500" />}
-                                                {!callLog?.whatsappSent && <MessageSquare className="w-4 h-4 text-slate-800" />}
+                                        <TableCell>
+                                            <div className="flex">
+                                                <Badge variant="outline" className={`
+                                                    ${team.hackathon_status === 'Selected for Round 2' ? 'border-amber-500/30 text-amber-400 bg-amber-500/10' : ''}
+                                                    ${team.hackathon_status === 'Registered' ? 'border-sky-500/30 text-sky-400 bg-sky-500/10' : ''}
+                                                    ${team.hackathon_status === 'Round 1' ? 'border-purple-500/30 text-purple-400 bg-purple-500/10' : ''}
+                                                `}>
+                                                    {team.hackathon_status}
+                                                </Badge>
                                             </div>
                                         </TableCell>
                                         <TableCell className="text-right">
-                                            {p.status === "MISSING" && (
-                                                <Button
-                                                    variant="ghost"
-                                                    size="icon"
-                                                    className="h-8 w-8 text-indigo-400 hover:text-indigo-300 hover:bg-indigo-500/10 disabled:opacity-50"
-                                                    onClick={() => callMutation.mutate(p.studentId)}
-                                                    disabled={isCalling || callMutation.isPending}
-                                                >
-                                                    <PhoneCall className="w-4 h-4" />
+                                            {team.hackathon_status === 'Selected for Round 2' ? (
+                                                <div className="flex flex-col items-end gap-2">
+                                                    <div className="text-[10px] text-amber-400 font-mono flex items-center gap-1.5 p-1 px-2 bg-amber-500/10 rounded border border-amber-500/20 shadow-sm">
+                                                        <Clock className="w-3 h-3" /> 23h 45m remaining for PPT
+                                                    </div>
+                                                    <Button
+                                                        size="sm"
+                                                        className="w-[150px] shadow-md transition-all bg-emerald-600 hover:bg-emerald-500 text-white"
+                                                    >
+                                                        <span className="flex items-center gap-2 text-xs"><MessageSquare className="w-3.5 h-3.5" /> Automated Nudge</span>
+                                                    </Button>
+                                                </div>
+                                            ) : (
+                                                <Button size="sm" variant="outline" className="border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white text-xs">
+                                                    View Details
                                                 </Button>
                                             )}
-                                            <Button variant="ghost" size="icon" className="h-8 w-8 text-slate-500">
-                                                <MoreVertical className="w-4 h-4" />
-                                            </Button>
                                         </TableCell>
                                     </TableRow>
-                                );
-                            })}
-                        </TableBody>
-                    </Table>
-                </CardContent>
-            </Card>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
+            </div>
 
             <style jsx global>{`
         @keyframes pulse-missing {

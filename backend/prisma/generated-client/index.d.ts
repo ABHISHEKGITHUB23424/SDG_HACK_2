@@ -1193,11 +1193,13 @@ export namespace Prisma {
   }
 
   export type StudentAvgAggregateOutputType = {
+    year: number | null
     cgpa: number | null
     hackathonCount: number | null
   }
 
   export type StudentSumAggregateOutputType = {
+    year: number | null
     cgpa: number | null
     hackathonCount: number | null
   }
@@ -1206,6 +1208,10 @@ export namespace Prisma {
     id: string | null
     name: string | null
     rollNo: string | null
+    year: number | null
+    department: string | null
+    section: string | null
+    passwordHash: string | null
     phone: string | null
     email: string | null
     leetcodeId: string | null
@@ -1221,6 +1227,10 @@ export namespace Prisma {
     id: string | null
     name: string | null
     rollNo: string | null
+    year: number | null
+    department: string | null
+    section: string | null
+    passwordHash: string | null
     phone: string | null
     email: string | null
     leetcodeId: string | null
@@ -1236,6 +1246,10 @@ export namespace Prisma {
     id: number
     name: number
     rollNo: number
+    year: number
+    department: number
+    section: number
+    passwordHash: number
     phone: number
     email: number
     leetcodeId: number
@@ -1250,11 +1264,13 @@ export namespace Prisma {
 
 
   export type StudentAvgAggregateInputType = {
+    year?: true
     cgpa?: true
     hackathonCount?: true
   }
 
   export type StudentSumAggregateInputType = {
+    year?: true
     cgpa?: true
     hackathonCount?: true
   }
@@ -1263,6 +1279,10 @@ export namespace Prisma {
     id?: true
     name?: true
     rollNo?: true
+    year?: true
+    department?: true
+    section?: true
+    passwordHash?: true
     phone?: true
     email?: true
     leetcodeId?: true
@@ -1278,6 +1298,10 @@ export namespace Prisma {
     id?: true
     name?: true
     rollNo?: true
+    year?: true
+    department?: true
+    section?: true
+    passwordHash?: true
     phone?: true
     email?: true
     leetcodeId?: true
@@ -1293,6 +1317,10 @@ export namespace Prisma {
     id?: true
     name?: true
     rollNo?: true
+    year?: true
+    department?: true
+    section?: true
+    passwordHash?: true
     phone?: true
     email?: true
     leetcodeId?: true
@@ -1395,6 +1423,10 @@ export namespace Prisma {
     id: string
     name: string
     rollNo: string
+    year: number
+    department: string
+    section: string | null
+    passwordHash: string
     phone: string
     email: string
     leetcodeId: string | null
@@ -1429,6 +1461,10 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     rollNo?: boolean
+    year?: boolean
+    department?: boolean
+    section?: boolean
+    passwordHash?: boolean
     phone?: boolean
     email?: boolean
     leetcodeId?: boolean
@@ -1447,6 +1483,10 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     rollNo?: boolean
+    year?: boolean
+    department?: boolean
+    section?: boolean
+    passwordHash?: boolean
     phone?: boolean
     email?: boolean
     leetcodeId?: boolean
@@ -1462,6 +1502,10 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     rollNo?: boolean
+    year?: boolean
+    department?: boolean
+    section?: boolean
+    passwordHash?: boolean
     phone?: boolean
     email?: boolean
     leetcodeId?: boolean
@@ -1490,6 +1534,10 @@ export namespace Prisma {
       id: string
       name: string
       rollNo: string
+      year: number
+      department: string
+      section: string | null
+      passwordHash: string
       phone: string
       email: string
       leetcodeId: string | null
@@ -1897,6 +1945,10 @@ export namespace Prisma {
     readonly id: FieldRef<"Student", 'String'>
     readonly name: FieldRef<"Student", 'String'>
     readonly rollNo: FieldRef<"Student", 'String'>
+    readonly year: FieldRef<"Student", 'Int'>
+    readonly department: FieldRef<"Student", 'String'>
+    readonly section: FieldRef<"Student", 'String'>
+    readonly passwordHash: FieldRef<"Student", 'String'>
     readonly phone: FieldRef<"Student", 'String'>
     readonly email: FieldRef<"Student", 'String'>
     readonly leetcodeId: FieldRef<"Student", 'String'>
@@ -5309,6 +5361,10 @@ export namespace Prisma {
     id: 'id',
     name: 'name',
     rollNo: 'rollNo',
+    year: 'year',
+    department: 'department',
+    section: 'section',
+    passwordHash: 'passwordHash',
     phone: 'phone',
     email: 'email',
     leetcodeId: 'leetcodeId',
@@ -5397,6 +5453,13 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Int'
+   */
+  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
+    
+
+
+  /**
    * Reference to a field of type 'DateTime'
    */
   export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
@@ -5407,13 +5470,6 @@ export namespace Prisma {
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
-    
-
-
-  /**
-   * Reference to a field of type 'Int'
-   */
-  export type IntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int'>
     
 
 
@@ -5434,6 +5490,10 @@ export namespace Prisma {
     id?: StringFilter<"Student"> | string
     name?: StringFilter<"Student"> | string
     rollNo?: StringFilter<"Student"> | string
+    year?: IntFilter<"Student"> | number
+    department?: StringFilter<"Student"> | string
+    section?: StringNullableFilter<"Student"> | string | null
+    passwordHash?: StringFilter<"Student"> | string
     phone?: StringFilter<"Student"> | string
     email?: StringFilter<"Student"> | string
     leetcodeId?: StringNullableFilter<"Student"> | string | null
@@ -5451,6 +5511,10 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     rollNo?: SortOrder
+    year?: SortOrder
+    department?: SortOrder
+    section?: SortOrderInput | SortOrder
+    passwordHash?: SortOrder
     phone?: SortOrder
     email?: SortOrder
     leetcodeId?: SortOrderInput | SortOrder
@@ -5471,6 +5535,10 @@ export namespace Prisma {
     OR?: StudentWhereInput[]
     NOT?: StudentWhereInput | StudentWhereInput[]
     name?: StringFilter<"Student"> | string
+    year?: IntFilter<"Student"> | number
+    department?: StringFilter<"Student"> | string
+    section?: StringNullableFilter<"Student"> | string | null
+    passwordHash?: StringFilter<"Student"> | string
     phone?: StringFilter<"Student"> | string
     email?: StringFilter<"Student"> | string
     leetcodeId?: StringNullableFilter<"Student"> | string | null
@@ -5488,6 +5556,10 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     rollNo?: SortOrder
+    year?: SortOrder
+    department?: SortOrder
+    section?: SortOrderInput | SortOrder
+    passwordHash?: SortOrder
     phone?: SortOrder
     email?: SortOrder
     leetcodeId?: SortOrderInput | SortOrder
@@ -5511,6 +5583,10 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Student"> | string
     name?: StringWithAggregatesFilter<"Student"> | string
     rollNo?: StringWithAggregatesFilter<"Student"> | string
+    year?: IntWithAggregatesFilter<"Student"> | number
+    department?: StringWithAggregatesFilter<"Student"> | string
+    section?: StringNullableWithAggregatesFilter<"Student"> | string | null
+    passwordHash?: StringWithAggregatesFilter<"Student"> | string
     phone?: StringWithAggregatesFilter<"Student"> | string
     email?: StringWithAggregatesFilter<"Student"> | string
     leetcodeId?: StringNullableWithAggregatesFilter<"Student"> | string | null
@@ -5763,6 +5839,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -5780,6 +5860,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -5797,6 +5881,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5814,6 +5902,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5831,6 +5923,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -5846,6 +5942,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -5861,6 +5961,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -6142,6 +6246,17 @@ export namespace Prisma {
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
+  export type IntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
   export type StringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
     in?: string[] | null
@@ -6218,6 +6333,10 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     rollNo?: SortOrder
+    year?: SortOrder
+    department?: SortOrder
+    section?: SortOrder
+    passwordHash?: SortOrder
     phone?: SortOrder
     email?: SortOrder
     leetcodeId?: SortOrder
@@ -6230,6 +6349,7 @@ export namespace Prisma {
   }
 
   export type StudentAvgOrderByAggregateInput = {
+    year?: SortOrder
     cgpa?: SortOrder
     hackathonCount?: SortOrder
   }
@@ -6238,6 +6358,10 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     rollNo?: SortOrder
+    year?: SortOrder
+    department?: SortOrder
+    section?: SortOrder
+    passwordHash?: SortOrder
     phone?: SortOrder
     email?: SortOrder
     leetcodeId?: SortOrder
@@ -6253,6 +6377,10 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     rollNo?: SortOrder
+    year?: SortOrder
+    department?: SortOrder
+    section?: SortOrder
+    passwordHash?: SortOrder
     phone?: SortOrder
     email?: SortOrder
     leetcodeId?: SortOrder
@@ -6265,6 +6393,7 @@ export namespace Prisma {
   }
 
   export type StudentSumOrderByAggregateInput = {
+    year?: SortOrder
     cgpa?: SortOrder
     hackathonCount?: SortOrder
   }
@@ -6284,6 +6413,22 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
     _max?: NestedStringFilter<$PrismaModel>
+  }
+
+  export type IntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
   }
 
   export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
@@ -6349,17 +6494,6 @@ export namespace Prisma {
     _max?: NestedIntNullableFilter<$PrismaModel>
   }
 
-  export type IntFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntFilter<$PrismaModel> | number
-  }
-
   export type ContestCountOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
@@ -6402,22 +6536,6 @@ export namespace Prisma {
 
   export type ContestSumOrderByAggregateInput = {
     durationMins?: SortOrder
-  }
-
-  export type IntWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
-    _count?: NestedIntFilter<$PrismaModel>
-    _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
   }
 
   export type DateTimeNullableFilter<$PrismaModel = never> = {
@@ -6577,6 +6695,14 @@ export namespace Prisma {
     set?: string
   }
 
+  export type IntFieldUpdateOperationsInput = {
+    set?: number
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
   export type NullableStringFieldUpdateOperationsInput = {
     set?: string | null
   }
@@ -6683,14 +6809,6 @@ export namespace Prisma {
     connectOrCreate?: CallLogCreateOrConnectWithoutContestInput | CallLogCreateOrConnectWithoutContestInput[]
     createMany?: CallLogCreateManyContestInputEnvelope
     connect?: CallLogWhereUniqueInput | CallLogWhereUniqueInput[]
-  }
-
-  export type IntFieldUpdateOperationsInput = {
-    set?: number
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
   }
 
   export type ParticipationUpdateManyWithoutContestNestedInput = {
@@ -6827,6 +6945,17 @@ export namespace Prisma {
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
+  export type NestedIntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
   export type NestedStringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
     in?: string[] | null
@@ -6891,7 +7020,7 @@ export namespace Prisma {
     _max?: NestedStringFilter<$PrismaModel>
   }
 
-  export type NestedIntFilter<$PrismaModel = never> = {
+  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
     in?: number[]
     notIn?: number[]
@@ -6899,7 +7028,23 @@ export namespace Prisma {
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntFilter<$PrismaModel> | number
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type NestedFloatFilter<$PrismaModel = never> = {
+    equals?: number | FloatFieldRefInput<$PrismaModel>
+    in?: number[]
+    notIn?: number[]
+    lt?: number | FloatFieldRefInput<$PrismaModel>
+    lte?: number | FloatFieldRefInput<$PrismaModel>
+    gt?: number | FloatFieldRefInput<$PrismaModel>
+    gte?: number | FloatFieldRefInput<$PrismaModel>
+    not?: NestedFloatFilter<$PrismaModel> | number
   }
 
   export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
@@ -6963,33 +7108,6 @@ export namespace Prisma {
     _sum?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedIntNullableFilter<$PrismaModel>
     _max?: NestedIntNullableFilter<$PrismaModel>
-  }
-
-  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
-    _count?: NestedIntFilter<$PrismaModel>
-    _avg?: NestedFloatFilter<$PrismaModel>
-    _sum?: NestedIntFilter<$PrismaModel>
-    _min?: NestedIntFilter<$PrismaModel>
-    _max?: NestedIntFilter<$PrismaModel>
-  }
-
-  export type NestedFloatFilter<$PrismaModel = never> = {
-    equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
-    lt?: number | FloatFieldRefInput<$PrismaModel>
-    lte?: number | FloatFieldRefInput<$PrismaModel>
-    gt?: number | FloatFieldRefInput<$PrismaModel>
-    gte?: number | FloatFieldRefInput<$PrismaModel>
-    not?: NestedFloatFilter<$PrismaModel> | number
   }
 
   export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
@@ -7252,6 +7370,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -7268,6 +7390,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -7331,6 +7457,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -7347,6 +7477,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -7400,6 +7534,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -7416,6 +7554,10 @@ export namespace Prisma {
     id?: string
     name: string
     rollNo: string
+    year?: number
+    department?: string
+    section?: string | null
+    passwordHash?: string
     phone: string
     email: string
     leetcodeId?: string | null
@@ -7479,6 +7621,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
@@ -7495,6 +7641,10 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     name?: StringFieldUpdateOperationsInput | string
     rollNo?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    department?: StringFieldUpdateOperationsInput | string
+    section?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
     phone?: StringFieldUpdateOperationsInput | string
     email?: StringFieldUpdateOperationsInput | string
     leetcodeId?: NullableStringFieldUpdateOperationsInput | string | null
